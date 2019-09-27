@@ -1,12 +1,15 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import ReactDOM from 'react-dom'
+import { Provider } from 'react-redux'
+import store from '../store'
 
 class App extends Component {
     render() {
         return (
-            <div>
-                <h2>Desde React!</h2>
-            </div>
+            <Fragment>
+                <Provider store={store}>
+                </Provider>
+            </Fragment>
         );
     }
 }
