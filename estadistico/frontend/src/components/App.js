@@ -1,17 +1,23 @@
 import React, { Component, Fragment } from 'react';
-import ReactDOM from 'react-dom'
-import { Provider } from 'react-redux'
-import store from '../store'
+import Navbar from './Navbar'
+import Header from './Header'
+import Portfolio from './Portfolio'
+import About from './About'
+import Footer from './Footer'
 
 class App extends Component {
     render() {
         return (
             <Fragment>
-                <Provider store={store}>
-                </Provider>
+                <Navbar />
+                <Header />
+                <Portfolio />
+                <About />
+                <Footer />
             </Fragment>
+
         );
     }
 }
 
-ReactDOM.render(<App />, document.getElementById('App'))
+export default App;
