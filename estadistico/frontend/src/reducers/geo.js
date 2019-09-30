@@ -27,6 +27,12 @@ export default function (state = initialState, action) {
                 municipios: action.payload
             }
 
+        case GET_DEPARTAMENTOS:
+            return {
+                ...state,
+                departamentos: action.payload
+            }
+
         default:
             return state;
     }

@@ -1,4 +1,4 @@
-import React, { Component} from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom'
 import store from './store'
 import App from '../components/App'

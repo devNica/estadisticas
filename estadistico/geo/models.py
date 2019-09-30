@@ -4,7 +4,7 @@ from django.db import models
 
 class infoBase(models.Model):
     visible = models.BooleanField(default=True)
-    extension = models.DecimalField(max_digits=10, decimal_places=2)
+    extension = models.DecimalField(max_digits=10, decimal_places=2, null=True)
     nombre = models.CharField(max_length=200)
 
    
@@ -13,7 +13,7 @@ class infoBase(models.Model):
         abstract = True
 
 
-class Zona(models.Model):
+class Zona(infoBase):
     
     ZONA_CHOICES = (
         ('P', 'Pacifico'),

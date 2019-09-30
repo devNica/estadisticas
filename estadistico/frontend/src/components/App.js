@@ -1,15 +1,19 @@
-import React, { Component, Fragment } from 'react';
-import { HashRouter as Router, Route, Switch, Redirect } from 'react-router-dom'
-import Header from './Header'
-import Geo from './Geo/Geo'
+import React, { Component } from 'react';
+import { HashRouter as Router } from 'react-router-dom'
+import Scroll from './Scroll';
+import Wrapper from './Wrapper';
+import Modal from './Modal'
+
 class App extends Component {
+
+
+
     render() {
         return (
             <Router>
-                <Header />
-                <Switch>
-                    <Route exact path={'/geo'} component={Geo} />
-                </Switch>
+                <Wrapper />
+                <Scroll />
+                <Modal />
             </Router>
         );
     }

@@ -20,14 +20,14 @@ export const getZonas = () => (dispatch) => {
         .catch(err => console.log(err))
 
 
-    axios.get('geo/api/municipio/list')
-        .then(res => {
-            dispatch({
-                type: GET_MUNICIPIOS,
-                payload: res.data,
-            })
-        })
-        .catch(err => console.log(err))
+    // axios.get('geo/api/municipio/list')
+    //     .then(res => {
+    //         dispatch({
+    //             type: GET_MUNICIPIOS,
+    //             payload: res.data,
+    //         })
+    //     })
+    //     .catch(err => console.log(err))
 
 
 }
