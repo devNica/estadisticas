@@ -1,21 +1,16 @@
 import React, { Component, Fragment } from 'react';
-import Navbar from './Navbar'
+import { HashRouter as Router, Route, Switch, Redirect } from 'react-router-dom'
 import Header from './Header'
-import Portfolio from './Portfolio'
-import About from './About'
-import Footer from './Footer'
-
+import Geo from './Geo/Geo'
 class App extends Component {
     render() {
         return (
-            <Fragment>
-                <Navbar />
+            <Router>
                 <Header />
-                <Portfolio />
-                <About />
-                <Footer />
-            </Fragment>
-
+                <Switch>
+                    <Route exact path={'/geo'} component={Geo} />
+                </Switch>
+            </Router>
         );
     }
 }

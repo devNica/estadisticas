@@ -12,6 +12,12 @@ class DepartamentoSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 class MunicipioSerializer(serializers.ModelSerializer):
+
+    departamento = serializers.SerializerMethodField()
+
+    def get_departamento(self, obj):
+        return str(obj.departamento)
+
     class Meta:
         model = Municipio
-        fields = '__all__'
+        fields = ('id', 'visible', 'extension', 'nombre', 'latitud_norte', 'longitud_oeste', 'msm', 'departamento', 'cabecera')
