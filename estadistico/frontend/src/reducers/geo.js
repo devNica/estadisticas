@@ -4,12 +4,14 @@ import {
     GET_DEPARTAMENTO,
     GET_MUNICIPIOS,
     GET_MUNICIPIO,
+    GET_CHARTDATA,
 } from '../actions/types'
 
 const initialState = {
     zonas: [],
     departamentos: [],
     municipios: [],
+
 }
 
 export default function (state = initialState, action) {
@@ -32,6 +34,8 @@ export default function (state = initialState, action) {
                 ...state,
                 departamentos: action.payload
             }
+
+
 
         default:
             return state;

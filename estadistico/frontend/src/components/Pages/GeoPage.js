@@ -3,6 +3,8 @@ import GeoTarget from '../Target/GeoTarget'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux';
 import { getZonas } from '../../actions/geo'
+import ZonaChart from '../Charts/Geo/ZonaChart';
+
 
 class GeoPage extends Component {
 
@@ -12,9 +14,13 @@ class GeoPage extends Component {
 
     componentDidMount() {
         this.props.getZonas()
+
     }
 
     render() {
+
+        const { zonas } = this.props;
+
         return (
 
             <Fragment>
@@ -27,10 +33,13 @@ class GeoPage extends Component {
                     </div>
                 </div>
                 <div className="row">
-                    {this.props.zonas.map((zona) => (
+                    {zonas.map((zona) => (
                         <GeoTarget title={zona.nombre} key={zona.id} extension={zona.extension} id={zona.id} />
                     ))}
                 </div>
+
+                <ZonaChart />
+
             </Fragment>
         );
     }
