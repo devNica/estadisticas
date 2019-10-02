@@ -6,7 +6,7 @@ class Bar extends Component {
 
     render() {
 
-        const { data, labels } = this.props
+        const { data, labels, backgroundColor, ratio } = this.props
 
         return (
 
@@ -20,19 +20,14 @@ class Bar extends Component {
                                 {
                                     label: 'Extension',
                                     data,
-                                    backgroundColor: [
-                                        'rgba(255,99,132,0.8)',
-                                        'rgba(54,162,235,0.8)',
-                                        'rgba(255,206,86,0.8)',
-                                        'rgba(75,192,192,0.8)',
-                                    ]
+                                    backgroundColor,
                                 }
                             ]
 
                         }}
 
                         options={{
-                            maintainAspectRatio: false
+                            maintainAspectRatio: ratio
                         }}
                     /> : null
 
@@ -46,7 +41,9 @@ class Bar extends Component {
 
 const mapStateToProps = state => ({
     labels: state.charts.infoData.labels,
-    data: state.charts.infoData.data
+    data: state.charts.infoData.data,
+    backgroundColor: state.charts.infoData.color,
+    ratio: state.charts.infoData.ratio,
 
 })
 

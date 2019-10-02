@@ -3,7 +3,9 @@ import { GET_CHARTDATA } from '../actions/types'
 const initialState = {
     infoData: {
         labels: [],
-        data: []
+        data: [],
+        color: [],
+        ratio: ''
     }
 }
 

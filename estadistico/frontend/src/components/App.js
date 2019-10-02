@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import { HashRouter as Router } from 'react-router-dom'
 import Scroll from './Scroll';
 import Wrapper from './Wrapper';
@@ -10,11 +10,18 @@ class App extends Component {
 
     render() {
         return (
-            <Router>
-                <Wrapper />
+            <Fragment>
+
+                <Router>
+                    <Wrapper />
+
+                </Router>
                 <Scroll />
                 <Modal />
-            </Router>
+            </Fragment>
+
+
+
         );
     }
 }

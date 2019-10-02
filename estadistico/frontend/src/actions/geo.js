@@ -11,27 +11,32 @@ import axios from 'axios'
 
 
 export const getZonas = () => (dispatch) => {
-    axios.get('geo/api/zona/list')
+    axios.get('/api/geo/zona/list')
         .then(res => {
             dispatch({
                 type: GET_ZONAS,
                 payload: res.data,
             })
 
-            let label = {}
-            let ext = {}
-            for (var i = 0; i < res.data.length; ++i) {
-                label[i] = res.data[i].nombre;
-                ext[i] = parseFloat(res.data[i].extension);
-            }
+        })
+        .catch(err => console.log(err))
 
 
-            const labels = Object.values(label)
-            const data = Object.values(ext)
+}
+
+
+export const getDepartamentos = () => (dispatch) => {
+    axios.get('/api/geo/departamento/list')
+        .then(res => {
+            dispatch({
+                type: GET_DEPARTAMENTOS,
+                payload: res.data,
+            })
 
         })
         .catch(err => console.log(err))
 
 
 }
+
 

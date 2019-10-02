@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from 'react';
+import { Link } from 'react-router-dom'
 
 class Sidebar extends Component {
     render() {
@@ -9,12 +10,12 @@ class Sidebar extends Component {
                 <ul className="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
 
-                    <a className="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                    <Link className="sidebar-brand d-flex align-items-center justify-content-center" to="/">
                         <div className="sidebar-brand-icon rotate-n-15">
                             <i className="fas fa-dove"></i>
                         </div>
                         <div className="sidebar-brand-text mx-3">CIECSO</div>
-                    </a>
+                    </Link>
 
 
                     <hr className="sidebar-divider my-0" />
@@ -43,8 +44,16 @@ class Sidebar extends Component {
                         <div id="collapseTwo" className="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                             <div className="bg-white py-2 collapse-inner rounded">
                                 <h6 className="collapse-header">Custom Components:</h6>
-                                <a className="collapse-item" href="buttons.html">Buttons</a>
-                                <a className="collapse-item" href="cards.html">Cards</a>
+                                <Link
+                                    to='/geo/zonas'
+                                    className='collapse-item'
+
+                                >Zonas</Link>
+                                <Link
+                                    to='/geo/departamentos'
+                                    className='collapse-item'
+
+                                >Departamentos</Link>
                             </div>
                         </div>
                     </li>

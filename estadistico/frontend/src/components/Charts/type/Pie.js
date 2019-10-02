@@ -2,7 +2,7 @@ import React from 'react';
 import { Pie as Grafico } from 'react-chartjs-2'
 import { connect } from 'react-redux'
 
-const Piechart = ({ labels, data }) => {
+const Piechart = ({ labels, data, backgroundColor, ratio }) => {
     return (
         <div>
             {data ?
@@ -14,19 +14,14 @@ const Piechart = ({ labels, data }) => {
                             {
                                 label: 'Extension',
                                 data,
-                                backgroundColor: [
-                                    'rgba(255,99,132,0.8)',
-                                    'rgba(54,162,235,0.8)',
-                                    'rgba(255,206,86,0.8)',
-                                    'rgba(75,192,192,0.8)',
-                                ]
+                                backgroundColor,
                             }
                         ]
 
                     }}
 
                     options={{
-                        maintainAspectRatio: false
+                        maintainAspectRatio: ratio
                     }}
                 /> : null
 
@@ -38,7 +33,9 @@ const Piechart = ({ labels, data }) => {
 
 const mapStateToProps = state => ({
     labels: state.charts.infoData.labels,
-    data: state.charts.infoData.data
+    data: state.charts.infoData.data,
+    backgroundColor: state.charts.infoData.color,
+    ratio: state.charts.infoData.ratio,
 
 })
 
