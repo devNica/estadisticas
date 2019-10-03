@@ -2,6 +2,7 @@ import {
     GET_ZONAS,
     GET_DEPARTAMENTOS,
     GET_DEPARTAMENTO,
+    RESET_DEPARTAMENTOS,
     GET_MUNICIPIOS,
     GET_MUNICIPIO,
     GET_CHARTDATA,
@@ -11,7 +12,7 @@ const initialState = {
     zonas: [],
     departamentos: [],
     municipios: [],
-
+    departamento: []
 }
 
 export default function (state = initialState, action) {
@@ -34,8 +35,16 @@ export default function (state = initialState, action) {
                 ...state,
                 departamentos: action.payload
             }
-
-
+        case GET_DEPARTAMENTO:
+            return {
+                ...state,
+                departamento: action.payload
+            }
+        case RESET_DEPARTAMENTOS:
+            return {
+                ...state,
+                departamentos: []
+            }
 
         default:
             return state;

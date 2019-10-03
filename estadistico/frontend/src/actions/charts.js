@@ -3,7 +3,7 @@ import {
     RESET_CHARTDATA,
 } from './types'
 
-export const getChartData = (origen) => (dispatch, getState) => {
+export const getChartData = (origen, aux = 'ext') => (dispatch, getState) => {
 
     let arreglo
 
@@ -16,6 +16,10 @@ export const getChartData = (origen) => (dispatch, getState) => {
         arreglo = getState().geo.departamentos
 
     }
+    if (origen === 'municipios') {
+        arreglo = getState().geo.departamento.municipio
+    }
+
 
 
     var letters = '0123456789ABCDEF';
@@ -24,28 +28,62 @@ export const getChartData = (origen) => (dispatch, getState) => {
 
     let label = {}
     let ext = {}
-    for (var i = 0; i < arreglo.length; ++i) {
-        label[i] = arreglo[i].nombre;
-        ext[i] = parseFloat(arreglo[i].extension);
+    let alt = {}
+    let x = {}
 
-        for (var k = 0; k < 6; k++) {
-            colorHex += letters[Math.floor(Math.random() * 16)];
+    //si el tipo de grafico es extension se crea un Array con los datos
+    //de la extension territorial de cada municipio 
+    if (aux === 'ext') {
 
+        for (var i = 0; i < arreglo.length; ++i) {
+            label[i] = arreglo[i].nombre;
+            ext[i] = parseFloat(arreglo[i].extension);
+
+            for (var k = 0; k < 6; k++) {
+                colorHex += letters[Math.floor(Math.random() * 16)];
+
+            }
+
+            color.push(hexToRGBA(colorHex, 70))
+            colorHex = '#'
         }
 
-        color.push(hexToRGBA(colorHex, 80))
-        colorHex = '#'
+
+        x = {
+            labels: Object.values(label),
+            data: Object.values(ext),
+            color: color,
+
+        }
     }
 
+    //si el tipo de grafico es altura se crea un Array con los datos
+    // de la altura promedio de cada cabecera municipal
+    if (aux === 'alt') {
+
+        for (var i = 0; i < arreglo.length; ++i) {
+            label[i] = arreglo[i].nombre;
+            alt[i] = parseFloat(arreglo[i].msm);
+
+            for (var k = 0; k < 6; k++) {
+                colorHex += letters[Math.floor(Math.random() * 16)];
+
+            }
+
+            color.push(hexToRGBA(colorHex, 70))
+            colorHex = '#'
+        }
 
 
-    const x = {
-        labels: Object.values(label),
-        data: Object.values(ext),
-        color: color,
+        x = {
+            labels: Object.values(label),
+            data: Object.values(alt),
+            color: color,
 
+        }
     }
 
+    console.log(x);
 
     dispatch({
         type: GET_CHARTDATA,
