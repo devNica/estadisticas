@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { getChartData } from '../../../actions/charts'
+import { getChartData, resetChartData } from '../../../actions/charts'
 import { connect } from 'react-redux'
 import Pie from '../type/Pie'
 import Doughnut from '../type/Doughnut'
@@ -22,11 +22,9 @@ class DepartamentoChart extends Component {
         this.props.getChartData('departamentos')
     }
 
-    handleClick = e => {
-
-        this.props.getChartData()
+    componentDidMount() {
+        this.props.resetChartData()
     }
-
 
     render() {
 
@@ -41,9 +39,9 @@ class DepartamentoChart extends Component {
                     </div>
 
                     {
-                        selectedOption === 'P' ? <Pie /> :
-                            selectedOption === 'B' ? <Bar /> :
-                                selectedOption === 'D' ? <Doughnut /> : null}
+                        selectedOption === 'P' ? <Pie ratio={true} /> :
+                            selectedOption === 'B' ? <Bar ratio={true} /> :
+                                selectedOption === 'D' ? <Doughnut ratio={true} /> : null}
 
 
                     <div className="card-body">
@@ -106,4 +104,4 @@ const mapStateToProps = state => ({
     departamentos: state.geo.departamentos
 })
 
-export default connect(mapStateToProps, { getChartData })(DepartamentoChart);
+export default connect(mapStateToProps, { getChartData, resetChartData })(DepartamentoChart);

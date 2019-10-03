@@ -21,3 +21,13 @@ class MunicipioSerializer(serializers.ModelSerializer):
     class Meta:
         model = Municipio
         fields = ('id', 'visible', 'extension', 'nombre', 'latitud_norte', 'longitud_oeste', 'msm', 'departamento', 'cabecera')
+
+class DepartamentoDetalleSerializer(serializers.ModelSerializer):
+
+    #municipio = serializers.StringRelatedField(many=True)
+    
+    municipio = MunicipioSerializer(many=True)
+    
+    class Meta:
+        model = Departamento
+        fields = '__all__'

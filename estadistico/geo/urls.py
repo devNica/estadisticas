@@ -1,5 +1,5 @@
 from django.urls import path, include
-from .api import ZonaView, ZonaCreate, DepartamentoView, DepartamentoCreate, MunicipioView, MunicipioCreate
+from .api import ZonaView, ZonaCreate, DepartamentoView, DepartamentoCreate, MunicipioView, MunicipioCreate, DepartamentoDetalleView
 
 urlpatterns=[
     path('api/geo/zona/list', ZonaView.as_view()),
@@ -8,4 +8,5 @@ urlpatterns=[
     path('api/geo/departamento/add', DepartamentoCreate.as_view()),
     path('api/geo/municipio/list', MunicipioView.as_view()),
     path('api/geo/municipio/add', MunicipioCreate.as_view()),
+    path('api/geo/departamento/<int:pk>', DepartamentoDetalleView.as_view()),
 ]

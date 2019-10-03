@@ -1,11 +1,10 @@
-import { GET_CHARTDATA } from '../actions/types'
+import { GET_CHARTDATA, RESET_CHARTDATA } from '../actions/types'
 
 const initialState = {
     infoData: {
         labels: [],
         data: [],
         color: [],
-        ratio: ''
     }
 }
 
@@ -16,6 +15,11 @@ export default function (state = initialState, action) {
                 ...state,
                 infoData: action.payload
             }
+        case RESET_CHARTDATA:
+            return {
+                infoData: action.payload
+            }
+
         default:
             return {
                 ...state

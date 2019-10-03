@@ -36,7 +36,7 @@ const mapStateToProps = state => ({
     labels: state.charts.infoData.labels,
     data: state.charts.infoData.data,
     backgroundColor: state.charts.infoData.color,
-    ratio: state.charts.infoData.ratio,
+
 
 })
 

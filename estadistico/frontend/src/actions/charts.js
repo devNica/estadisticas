@@ -1,20 +1,20 @@
 import {
-
     GET_CHARTDATA,
+    RESET_CHARTDATA,
 } from './types'
 
 export const getChartData = (origen) => (dispatch, getState) => {
 
     let arreglo
-    let ratio
+
 
     if (origen === 'zonas') {
         arreglo = getState().geo.zonas
-        ratio = false
+
     }
     if (origen === 'departamentos') {
         arreglo = getState().geo.departamentos
-        ratio = true
+
     }
 
 
@@ -43,7 +43,6 @@ export const getChartData = (origen) => (dispatch, getState) => {
         labels: Object.values(label),
         data: Object.values(ext),
         color: color,
-        ratio: ratio
 
     }
 
@@ -63,4 +62,17 @@ export const hexToRGBA = (hex, opacity) => {
 
     let result = 'rgba(' + r + ',' + g + ',' + b + ',' + opacity / 100 + ')';
     return result;
+}
+
+export const resetChartData = () => dispatch => {
+    const x = {
+        labels: [],
+        data: [],
+        color: []
+    }
+
+    dispatch({
+        type: RESET_CHARTDATA,
+        payload: x
+    })
 }

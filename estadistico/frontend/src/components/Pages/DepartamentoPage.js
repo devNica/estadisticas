@@ -1,45 +1,19 @@
-import React, { Component, Fragment } from 'react';
-import { connect } from 'react-redux'
-import { getDepartamentos } from '../../actions/geo'
-import GeoTarget from '../Target/GeoTarget'
-import DepartamentoChart from '../Charts/Geo/DepartamentoChart';
+import React, { Component } from 'react';
 
-class DepartamentoPage extends Component {
+class ChinandegaPage extends Component {
 
     componentDidMount() {
-        this.props.getDepartamentos()
+        const { match: { params } } = this.props
+        console.log(params.id);
     }
 
     render() {
-
-        const { departamentos } = this.props;
-
         return (
-            <Fragment>
-
-                <div className="d-sm-flex align-items-center justify-content-between mb-4">
-                    <div className="card">
-                        <div className="card-header">
-                            Informacion Geografica por Zonas
-                </div>
-                    </div>
-                </div>
-                <div className="row">
-                    {departamentos.map((departamento) => (
-                        <GeoTarget title={departamento.nombre} key={departamento.id} extension={departamento.extension} id={departamento.id} />
-                    ))}
-                </div>
-
-                <DepartamentoChart />
-
-
-            </Fragment>
+            <div>
+                <h2>desde departamento</h2>
+            </div>
         );
     }
 }
 
-const mapStateToProps = state => ({
-    departamentos: state.geo.departamentos
-})
-
-export default connect(mapStateToProps, { getDepartamentos })(DepartamentoPage);
+export default ChinandegaPage;

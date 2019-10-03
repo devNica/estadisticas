@@ -25,3 +25,8 @@ class MunicipioView(generics.ListAPIView):
 class MunicipioCreate(generics.CreateAPIView):
     queryset = Municipio.objects.all()
     serializer_class = MunicipioSerializer
+
+
+class DepartamentoDetalleView(generics.RetrieveAPIView):
+    queryset = Departamento.objects.all()
+    serializer_class = DepartamentoDetalleSerializer 

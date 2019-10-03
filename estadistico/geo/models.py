@@ -47,7 +47,7 @@ class Municipio(infoBase):
     latitud_norte = models.CharField(max_length=6)
     longitud_oeste = models.CharField(max_length=6)
     msm = models.DecimalField(max_digits=6, decimal_places=2)
-    departamento = models.ForeignKey(Departamento, on_delete=models.CASCADE, null=True)
+    departamento = models.ForeignKey(Departamento, on_delete=models.CASCADE, null=True, related_name='municipio')
     cabecera = models.CharField(max_length=200, blank=True, null=True)
 
     def __str__(self):

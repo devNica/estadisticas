@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
-import { getChartData } from '../../../actions/charts'
+import { getChartData, resetChartData } from '../../../actions/charts'
 import Bar from '../type/Bar'
 import Pie from '../type/Pie'
 import Doughnut from '../type/Doughnut'
@@ -22,9 +22,8 @@ class ZonaChart extends Component {
         this.props.getChartData('zonas')
     }
 
-    handleClick = e => {
-
-        this.props.getChartData()
+    componentDidMount() {
+        this.props.resetChartData()
     }
 
     render() {
@@ -39,9 +38,9 @@ class ZonaChart extends Component {
                     </div>
 
                     {
-                        selectedOption === 'P' ? <Pie /> :
-                            selectedOption === 'B' ? <Bar /> :
-                                selectedOption === 'D' ? <Doughnut /> : null}
+                        selectedOption === 'P' ? <Pie ratio={false} /> :
+                            selectedOption === 'B' ? <Bar ratio={false} /> :
+                                selectedOption === 'D' ? <Doughnut ratio={false} /> : null}
 
 
                     <div className="card-body">
@@ -104,4 +103,4 @@ const mapStateToProps = state => ({
     zonas: state.geo.zonas,
 })
 
-export default connect(mapStateToProps, { getChartData })(ZonaChart);
+export default connect(mapStateToProps, { getChartData, resetChartData })(ZonaChart);

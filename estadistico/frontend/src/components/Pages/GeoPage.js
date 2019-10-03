@@ -34,7 +34,7 @@ class GeoPage extends Component {
                 </div>
                 <div className="row">
                     {zonas.map((zona) => (
-                        <GeoTarget title={zona.nombre} key={zona.id} extension={zona.extension} id={zona.id} />
+                        <GeoTarget title={zona.nombre} key={zona.id} extension={zona.extension} id={zona.id} control={1} />
                     ))}
                 </div>
 
