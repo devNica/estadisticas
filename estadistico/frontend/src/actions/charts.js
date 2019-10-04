@@ -70,7 +70,7 @@ export const getChartData = (origen, aux = 'ext') => (dispatch, getState) => {
 
             }
 
-            color.push(hexToRGBA(colorHex, 70))
+            color.push(hexToRGBA(colorHex, 60))
             colorHex = '#'
         }
 

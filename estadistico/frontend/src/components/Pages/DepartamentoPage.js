@@ -19,8 +19,8 @@ class DepartamentoPage extends Component {
         return (
             <div>
                 <div className="card shadow mb-4">
-                    <div className="card-header py-3 bg-dark">
-                        <h6 className='m-0 font-weight-bold text-warning'>Municipios de {nombre}</h6>
+                    <div className="card-header py-3 bg-primary">
+                        <h6 className='m-0 font-weight-bold text-white'>Municipios de {nombre}</h6>
                     </div>
 
                     {municipio ?

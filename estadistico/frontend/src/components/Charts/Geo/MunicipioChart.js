@@ -97,7 +97,7 @@ class MunicipioChart extends Component {
         return (
             <div className='card'>
                 <div className="card-header">
-                    Grafico, Aspectos
+                    Perfiles Geograficos
                 </div>
 
                 {
@@ -120,7 +120,7 @@ class MunicipioChart extends Component {
                                     id='id_tipoE'
                                     checked={tipo === 'ext'}
                                     onChange={this.handleOnchange} />
-                                Grafica de Extension Geografica</label>
+                                Extension</label>
                         </div>
 
                         <div className="form-group mr-3">
@@ -134,7 +134,7 @@ class MunicipioChart extends Component {
                                     id='id_tipoA'
                                     checked={tipo === 'alt'}
                                     onChange={this.handleOnchange} />
-                                Grafica de Altura</label>
+                                Altura</label>
                         </div>
 
                         {tipo === 'ext' ? opcionesExtension : opcionesAltura}
@@ -147,6 +147,11 @@ class MunicipioChart extends Component {
                         </div>
 
                     </form>
+                </div>
+                <div className="card-footer">
+                    <p className='ml-auto'>
+                        Datos proporcionados por el INIDE, Anuario Estadistico(2016)
+                        </p>
                 </div>
             </div>
         );
