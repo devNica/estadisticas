@@ -1,5 +1,8 @@
 from rest_framework import serializers
 from .models import *
+from clima.models import *
+from clima.serializers import *
+
 
 class ZonaSerializer(serializers.ModelSerializer):
     class Meta:
@@ -25,9 +28,11 @@ class MunicipioSerializer(serializers.ModelSerializer):
 class DepartamentoDetalleSerializer(serializers.ModelSerializer):
 
     #municipio = serializers.StringRelatedField(many=True)
-    
     municipio = MunicipioSerializer(many=True)
+    
     
     class Meta:
         model = Departamento
         fields = '__all__'
+
+

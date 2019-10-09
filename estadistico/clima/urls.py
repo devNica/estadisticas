@@ -1,9 +1,12 @@
 from django.urls import path, include
-from .api import MesView, MesCreate, PrecipitacionView, PrecipitacionCreate
+from .api import ListaMes, AgregarMes, Precipitaciones, AgregarPrecipitacion, ListaPrecipitaciones
+from .api import PrecipitacionDepartamento
 
 urlpatterns=[
-    path('api/clima/mes/list', MesView.as_view()),
-    path('api/clima/mes/add', MesCreate.as_view()),
-    path('api/clima/precipitacion/list', PrecipitacionView.as_view()),
-    path('api/clima/precipitacion/add', PrecipitacionCreate.as_view()),
+    path('api/clima/mes/list', ListaMes.as_view()),
+    path('api/clima/mes/add', AgregarMes.as_view()),
+    path('api/clima/precipitacion/list', Precipitaciones.as_view()),
+    path('api/clima/precipitacion/add', AgregarPrecipitacion.as_view()),
+    path('api/clima/precipitacion/departamento', ListaPrecipitaciones.as_view()),
+    path('api/clima/precipitacion/departamento/<int:pk>', PrecipitacionDepartamento.as_view()),
 ]

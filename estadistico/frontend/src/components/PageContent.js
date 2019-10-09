@@ -4,6 +4,7 @@ import BlankPage from './Pages/BlankPage'
 import GeoPage from './Pages/GeoPage'
 import DepartamentosPage from './Pages/DepartamentosPage';
 import DepartamentoPage from './Pages/DepartamentoPage';
+import PrecipitacionesPage from './Pages/PrecipitacionesPage';
 
 class PageContent extends Component {
     render() {
@@ -15,6 +16,7 @@ class PageContent extends Component {
                     <Route exact path='/geo/zonas' component={GeoPage} />
                     <Route exact path='/geo/departamentos' component={DepartamentosPage} />
                     <Route exact path='/geo/departamento/:id' component={DepartamentoPage} />
+                    <Route exact path='/clima/precipitaciones' component={PrecipitacionesPage} />
                 </Switch>
 
 

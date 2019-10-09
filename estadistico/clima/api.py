@@ -1,19 +1,31 @@
 from rest_framework import generics
 from .serializers import *
 from .models import *
+from geo.models import *
+from geo.serializers import *
 
-class MesView(generics.ListAPIView):
+class ListaMes(generics.ListAPIView):
     queryset = Mes.objects.all()
     serializer_class = MesSerializer
 
-class MesCreate(generics.CreateAPIView):
+class AgregarMes(generics.CreateAPIView):
     queryset = Mes.objects.all()
     serializer_class = MesSerializer
 
-class PrecipitacionView(generics.ListAPIView):
+class Precipitaciones(generics.ListAPIView):
     queryset = Precipitacion.objects.all()
     serializer_class = PrecipitacionSerializer
 
-class PrecipitacionCreate(generics.CreateAPIView):
+class AgregarPrecipitacion(generics.CreateAPIView):
     queryset = Precipitacion.objects.all()
     serializer_class = PrecipitacionSerializer
+
+class ListaPrecipitaciones(generics.ListAPIView):
+    queryset = Departamento.objects.all()
+    serializer_class = PrecipitacionDepartamentoSerializer
+
+class PrecipitacionDepartamento(generics.RetrieveAPIView):
+    queryset = Departamento.objects.all()
+    serializer_class = PrecipitacionDepartamentoSerializer
+
+

@@ -1,5 +1,7 @@
 from rest_framework import serializers
 from .models import *
+from geo.models import *
+from geo.serializers import *
 
 
 class MesSerializer(serializers.ModelSerializer):
@@ -10,12 +12,9 @@ class MesSerializer(serializers.ModelSerializer):
 
 class PrecipitacionSerializer(serializers.ModelSerializer):
 
-    departamento = serializers.SerializerMethodField()
     municipio = serializers.SerializerMethodField()
     mes = serializers.SerializerMethodField()
 
-    def get_departamento(self, obj):
-        return str(obj.departamento)
     def get_municipio(self, obj):
         return str(obj.municipio)
     def get_mes(self, obj):
@@ -24,4 +23,13 @@ class PrecipitacionSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Precipitacion
-        fields = ['id', 'precipitacion', 'departamento', 'municipio', 'mes']
+        fields = ['id', 'precipitacion', 'municipio', 'mes']
+
+
+class PrecipitacionDepartamentoSerializer(serializers.ModelSerializer):
+
+    precipitacion = PrecipitacionSerializer(many=True)
+
+    class Meta:
+        model = Departamento
+        fields = '__all__'
