@@ -20,6 +20,8 @@ export default function (state = initialState, action) {
                 infoData: action.payload
             }
 
+
+
         default:
             return {
                 ...state

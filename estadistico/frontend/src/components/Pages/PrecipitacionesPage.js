@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux'
-import { getPrecipitaciones, getPrecipitacionDepartamento } from '../../actions/clima'
 import NicaraguaMap from '../Maps/NicaraguaMap'
-
+import { connect } from 'react-redux'
+import { resetGeoData } from '../../actions/clima'
 class PrecipitacionesPage extends Component {
 
     componentDidMount() {
-        this.props.getPrecipitacionDepartamento()
+        this.props.resetGeoData()
     }
 
     render() {
@@ -18,4 +17,4 @@ class PrecipitacionesPage extends Component {
     }
 }
 
-export default connect(null, { getPrecipitaciones, getPrecipitacionDepartamento })(PrecipitacionesPage);
+export default connect(null, { resetGeoData })(PrecipitacionesPage);

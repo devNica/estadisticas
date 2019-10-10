@@ -1,5 +1,15 @@
-import { GET_PRECIPITACIONES, GET_PRECIPITACION_DEPARTAMENTO } from './types'
+import { GET_PRECIPITACIONES, GET_PRECIPITACION_DEPARTAMENTO, RESET_DEPARTAMENTOS, RESET_DEPARTAMENTO } from './types'
 import axios from 'axios'
+
+export const resetGeoData = () => dispatch => {
+    dispatch({
+        type: RESET_DEPARTAMENTOS
+    })
+
+    dispatch({
+        type: RESET_DEPARTAMENTO
+    })
+}
 
 export const getPrecipitaciones = () => dispatch => {
 
@@ -34,8 +44,13 @@ export const getPrecipitaciones = () => dispatch => {
         .catch(err => console.log(err))
 }
 
-export const getPrecipitacionDepartamento = () => dispatch => {
-    axios.get('/api/clima/precipitacion/departamento/1')
+export const getPrecipitacionDepartamento = (id) => dispatch => {
+
+    dispatch({
+        type: RESET_DEPARTAMENTOS
+    })
+
+    axios.get(`/api/clima/precipitacion/departamento/${id}`)
         .then(res => {
 
             dispatch({

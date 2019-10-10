@@ -1,4 +1,4 @@
-import { GET_PRECIPITACIONES, GET_PRECIPITACION_DEPARTAMENTO } from '../actions/types'
+import { GET_PRECIPITACIONES, GET_PRECIPITACION_DEPARTAMENTO, RESET_PRECIPITACION } from '../actions/types'
 
 const initialState = {
     precipitaciones: []
@@ -16,6 +16,11 @@ export default function (state = initialState, action) {
                 ...state,
                 precipitaciones: action.payload
             }
+        case RESET_PRECIPITACION:
+            return {
+                precipitaciones: []
+            }
+
         default:
             return {
                 ...state

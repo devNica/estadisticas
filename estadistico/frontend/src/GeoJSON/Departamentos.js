@@ -1,4 +1,3 @@
-
 export const departamentos = {
     "type": "FeatureCollection",
     "features": [
@@ -23,7 +22,8 @@ export const departamentos = {
           "pprM": 0.5168,
           "pprF": 0.4832,
           "itu": 0.6405,
-          "itr": 0.3595
+          "itr": 0.3595,
+          "id": 1
         },
         "geometry": {
           "type": "Polygon",
@@ -774,7 +774,8 @@ export const departamentos = {
           "pprM": 0.5024,
           "pprF": 0.4976,
           "itu": 0.6446,
-          "itr": 0.3554
+          "itr": 0.3554,
+          "id": 6
         },
         "geometry": {
           "type": "Polygon",
@@ -1073,7 +1074,8 @@ export const departamentos = {
           "pprM": 0.5082,
           "pprF": 0.4918,
           "itu": 0.5928,
-          "itr": 0.4072
+          "itr": 0.4072,
+          "id": 4
         },
         "geometry": {
           "type": "Polygon",
@@ -1360,7 +1362,8 @@ export const departamentos = {
           "pprM": 0.5155,
           "pprF": 0.4845,
           "itu": 0.4619,
-          "itr": 0.5381
+          "itr": 0.5381,
+          "id": 14
         },
         "geometry": {
           "type": "Polygon",
@@ -1931,7 +1934,8 @@ export const departamentos = {
           "pprM": 0.5114,
           "pprF": 0.4886,
           "itu": 0.3314,
-          "itr": 0.6686
+          "itr": 0.6686,
+          "id": 12
         },
         "geometry": {
           "type": "Polygon",
@@ -2398,7 +2402,8 @@ export const departamentos = {
           "pprM": 0.5102,
           "pprF": 0.4898,
           "itr": 0.3763,
-          "itu": 0.6237
+          "itu": 0.6237,
+          "id": 10
         },
         "geometry": {
           "type": "Polygon",
@@ -2893,7 +2898,8 @@ export const departamentos = {
           "pprM": 0.5118,
           "pprF": 0.4882,
           "itu": 0.2391,
-          "itr": 0.7609
+          "itr": 0.7609,
+          "id": 11
         },
         "geometry": {
           "type": "Polygon",
@@ -3784,7 +3790,8 @@ export const departamentos = {
           "pprM": 0.4979,
           "pprF": 0.5021,
           "itu": 0.4052,
-          "itr": 0.5948
+          "itr": 0.5948,
+          "id": 13
         },
         "geometry": {
           "type": "Polygon",
@@ -4343,7 +4350,8 @@ export const departamentos = {
           "pprM": 0.5125,
           "pprF": 0.4875,
           "itu": 0.6291,
-          "itr": 0.3709
+          "itr": 0.3709,
+          "id": 2
         },
         "geometry": {
           "type": "Polygon",
@@ -5662,7 +5670,8 @@ export const departamentos = {
           "pprM": "0.5240",
           "pprF": 0.476,
           "itu": 0.6752,
-          "itr": 0.3248
+          "itr": 0.3248,
+          "id": 5
         },
         "geometry": {
           "type": "Polygon",
@@ -6729,7 +6738,8 @@ export const departamentos = {
           "pprM": 0.4578,
           "pprF": 0.5422,
           "itu": 0.9287,
-          "itr": 0.0713
+          "itr": 0.0713,
+          "id": 3
         },
         "geometry": {
           "type": "Polygon",
@@ -8496,7 +8506,8 @@ export const departamentos = {
           "pprM": 0.5147,
           "pprF": 0.4853,
           "itu": 0.5157,
-          "itr": 0.4843
+          "itr": 0.4843,
+          "id": 7
         },
         "geometry": {
           "type": "Polygon",
@@ -9599,7 +9610,8 @@ export const departamentos = {
           "pprM": 0.5362,
           "pprF": 0.4638,
           "itu": 0.6041,
-          "itr": 0.3959
+          "itr": 0.3959,
+          "id": 9
         },
         "geometry": {
           "type": "Polygon",
@@ -10894,7 +10906,8 @@ export const departamentos = {
           "pprM": 0.5032,
           "pprF": 0.4968,
           "itu": 0.3377,
-          "itr": 0.6623
+          "itr": 0.6623,
+          "id": 8
         },
         "geometry": {
           "type": "Polygon",
@@ -11713,7 +11726,8 @@ export const departamentos = {
           "pprM": 0.5195,
           "pprF": 0.4805,
           "itu": 0.2662,
-          "itr": 0.7338
+          "itr": 0.7338,
+          "id": 15
         },
         "geometry": {
           "type": "Polygon",
@@ -13972,7 +13986,8 @@ export const departamentos = {
           "pprM": 0.5094,
           "pprF": 0.4906,
           "itu": 0.3314,
-          "itr": 0.6686
+          "itr": 0.6686,
+          "id": 16
         },
         "geometry": {
           "type": "Polygon",
@@ -17487,7 +17502,8 @@ export const departamentos = {
           "pprM": 0.5064,
           "pprF": 0.4936,
           "itu": 0.4328,
-          "itr": 0.5672
+          "itr": 0.5672,
+          "id": 17
         },
         "geometry": {
           "type": "Polygon",
@@ -19598,7 +19614,8 @@ export const departamentos = {
           "pprM": 0.5147,
           "pprF": 0.4853,
           "itu": 0.3953,
-          "itr": 0.6047
+          "itr": 0.6047,
+          "id": 0
         },
         "geometry": {
           "type": "Polygon",
@@ -21277,7 +21294,8 @@ export const departamentos = {
           "pprM": 0,
           "pprF": 0,
           "itu": 0,
-          "itr": 0
+          "itr": 0,
+          "id": 0
         },
         "geometry": {
           "type": "Polygon",
@@ -21784,7 +21802,8 @@ export const departamentos = {
           "pprM": 0,
           "pprF": 0,
           "itu": 0,
-          "itr": 0
+          "itr": 0,
+          "id": 0
         },
         "geometry": {
           "type": "Polygon",

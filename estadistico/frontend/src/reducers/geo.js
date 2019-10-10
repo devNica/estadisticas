@@ -3,9 +3,11 @@ import {
     GET_DEPARTAMENTOS,
     GET_DEPARTAMENTO,
     RESET_DEPARTAMENTOS,
+    RESET_DEPARTAMENTO,
     GET_MUNICIPIOS,
     GET_MUNICIPIO,
     GET_CHARTDATA,
+
 } from '../actions/types'
 
 const initialState = {
@@ -35,6 +37,7 @@ export default function (state = initialState, action) {
                 ...state,
                 departamentos: action.payload
             }
+
         case GET_DEPARTAMENTO:
             return {
                 ...state,
@@ -44,6 +47,11 @@ export default function (state = initialState, action) {
             return {
                 ...state,
                 departamentos: []
+            }
+        case RESET_DEPARTAMENTO:
+            return {
+                ...state,
+                departamento: []
             }
 
         default:

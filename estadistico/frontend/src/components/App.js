@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import { HashRouter as Router } from 'react-router-dom'
+import { HashRouter as Router, BrowserRouter } from 'react-router-dom'
 import Scroll from './Scroll';
 import Wrapper from './Wrapper';
 import Modal from './Modal'

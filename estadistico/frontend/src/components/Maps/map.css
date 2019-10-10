@@ -1,0 +1,4 @@
+.map{
+    height: 480px;
+}
+.leaflet-fade-anim .leaflet-tile,.leaflet-zoom-anim .leaflet-zoom-animated { will-change:auto !important; }
