@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import { getPrecipitacionDepartamento } from '../../actions/clima'
-import PrecipitacionData from '../Data/clima/PrecipitacionData'
+import DepartamentoChart from '../Charts/clima/DepartamentoChart';
 
 class PrecipitacionPage extends Component {
+
 
     componentDidMount() {
 
@@ -15,7 +16,7 @@ class PrecipitacionPage extends Component {
 
     render() {
 
-        const { BD, UD, nombre } = this.props.multiData
+        const { BD, UD, nombre, isBidimensional } = this.props.multiData
         return (
             <div>
                 <div className="card shadow mb-4">
@@ -64,8 +65,9 @@ class PrecipitacionPage extends Component {
                                 </tbody>
                             </table>
                         </div>
-
-
+                        {isBidimensional !== undefined ?
+                            <DepartamentoChart />
+                            : null}
 
                     </div>
                 </div>

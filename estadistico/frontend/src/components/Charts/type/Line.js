@@ -5,7 +5,7 @@ import { connect } from 'react-redux'
 class Line extends Component {
     render() {
 
-        const { data, labels, backgroundColor, ratio } = this.props
+        const { data, labels, backgroundColor, ratio, title } = this.props
 
         return (
             <div>
@@ -16,7 +16,7 @@ class Line extends Component {
                             labels,
                             datasets: [
                                 {
-                                    label: 'Altura',
+                                    label: title[0],
                                     data,
                                     backgroundColor,
                                 }
@@ -40,6 +40,7 @@ const mapStateToProps = state => ({
     labels: state.charts.infoData.labels,
     data: state.charts.infoData.data,
     backgroundColor: state.charts.infoData.color,
+    title: state.charts.infoData.title,
 })
 
 export default connect(mapStateToProps)(Line);

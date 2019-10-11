@@ -5,6 +5,7 @@ const initialState = {
         labels: [],
         data: [],
         color: [],
+        title: '',
     }
 }
 

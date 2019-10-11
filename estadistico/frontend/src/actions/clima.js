@@ -58,6 +58,7 @@ export const getPrecipitacionDepartamento = (id) => dispatch => {
 
             let bidimensional = new Array(2)
             let unidimensional = [];
+            let isBidimensional = true;
 
             for (let i = 0; i < (x.length / 12); i++) {
 
@@ -70,19 +71,12 @@ export const getPrecipitacionDepartamento = (id) => dispatch => {
                     if (x.length / 12 > 1) {
 
                         if (j == 0) {
-
-
                             bidimensional[i][0] = x[contador].municipio
-
                         }
                         else {
-
                             bidimensional[i][j] = x[contador - (1 + i)].precipitacion
 
                         }
-                        console.log(bidimensional[i][j])
-
-
                     }
                     else {
                         if (j == 0) {
@@ -91,8 +85,6 @@ export const getPrecipitacionDepartamento = (id) => dispatch => {
                         else {
                             unidimensional[j] = x[contador - 1].precipitacion
                         }
-
-
                     }
                     contador++;
 
@@ -100,7 +92,9 @@ export const getPrecipitacionDepartamento = (id) => dispatch => {
 
             }
 
-
+            if (unidimensional.length > 0) {
+                isBidimensional = false
+            }
 
             // dispatch({
             //     type: GET_PRECIPITACION_DEPARTAMENTO,
@@ -110,7 +104,7 @@ export const getPrecipitacionDepartamento = (id) => dispatch => {
             dispatch({
                 type: 'GET_2B_ARRAY',
                 payload: {
-                    UD: unidimensional, BD: bidimensional, nombre: res.data.nombre
+                    UD: unidimensional, BD: bidimensional, nombre: res.data.nombre, isBidimensional
                 }
             })
 
