@@ -33,3 +33,12 @@ class PrecipitacionDepartamentoSerializer(serializers.ModelSerializer):
     class Meta:
         model = Departamento
         fields = '__all__'
+
+
+class PrecipitacionMunicipioSerializer(serializers.ModelSerializer):
+
+    precipitacion = PrecipitacionSerializer(many=True)
+
+    class Meta:
+        model = Municipio
+        fields = '__all__'

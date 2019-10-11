@@ -29,3 +29,7 @@ class PrecipitacionDepartamento(generics.RetrieveAPIView):
     serializer_class = PrecipitacionDepartamentoSerializer
 
 
+##reciente
+class PrecipitacionMunicipio(generics.RetrieveAPIView):
+    queryset = Municipio.objects.all()
+    serializer_class = PrecipitacionMunicipioSerializer

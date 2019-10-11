@@ -13,11 +13,9 @@ class PrecipitacionPage extends Component {
 
     }
 
-
-
     render() {
-        const { nombre, precipitacion } = this.props.precipitacion
 
+        const { BD, UD, nombre } = this.props.multiData
         return (
             <div>
                 <div className="card shadow mb-4">
@@ -47,10 +45,28 @@ class PrecipitacionPage extends Component {
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    {UD !== undefined ?
+                                        //hay datos en el arreglo Unidimensional?
+                                        UD.length > 0 ?
+                                            //si, mapear la informacion
+                                            <tr>{UD.map((pcp, i) => (<td key={i}>{pcp}</td>))}</tr> :
+                                            //no hay, entonces el arreglo bidimencional    //debe contener la informacion 
+                                            BD.map((bd, i) => (
+                                                <tr key={i}>
+                                                    {bd.map((pcp, j) => (
+                                                        <td key={j}>{pcp}</td>
+                                                    ))}
+                                                </tr>
+                                            ))
 
+
+                                        : null}
                                 </tbody>
                             </table>
                         </div>
+
+
+
                     </div>
                 </div>
             </div>
@@ -59,7 +75,7 @@ class PrecipitacionPage extends Component {
 }
 
 const mapStateToProps = state => ({
-    precipitacion: state.clima.precipitaciones
+    multiData: state.clima.multiData
 })
 
 export default connect(mapStateToProps, { getPrecipitacionDepartamento })(PrecipitacionPage);

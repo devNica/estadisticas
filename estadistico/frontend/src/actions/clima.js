@@ -53,9 +53,65 @@ export const getPrecipitacionDepartamento = (id) => dispatch => {
     axios.get(`/api/clima/precipitacion/departamento/${id}`)
         .then(res => {
 
+            let x = res.data.precipitacion
+            let contador = 0;
+
+            let bidimensional = new Array(2)
+            let unidimensional = [];
+
+            for (let i = 0; i < (x.length / 12); i++) {
+
+                if (x.length / 12 > 1) {
+                    bidimensional[i] = new Array(13)
+                }
+
+                for (let j = 0; j <= 12; j++) {
+
+                    if (x.length / 12 > 1) {
+
+                        if (j == 0) {
+
+
+                            bidimensional[i][0] = x[contador].municipio
+
+                        }
+                        else {
+
+                            bidimensional[i][j] = x[contador - (1 + i)].precipitacion
+
+                        }
+                        console.log(bidimensional[i][j])
+
+
+                    }
+                    else {
+                        if (j == 0) {
+                            unidimensional[0] = x[contador].municipio
+                        }
+                        else {
+                            unidimensional[j] = x[contador - 1].precipitacion
+                        }
+
+
+                    }
+                    contador++;
+
+                }
+
+            }
+
+
+
+            // dispatch({
+            //     type: GET_PRECIPITACION_DEPARTAMENTO,
+            //     payload: res.data
+            // })
+
             dispatch({
-                type: GET_PRECIPITACION_DEPARTAMENTO,
-                payload: res.data
+                type: 'GET_2B_ARRAY',
+                payload: {
+                    UD: unidimensional, BD: bidimensional, nombre: res.data.nombre
+                }
             })
 
         })

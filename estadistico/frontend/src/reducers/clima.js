@@ -1,7 +1,8 @@
 import { GET_PRECIPITACIONES, GET_PRECIPITACION_DEPARTAMENTO, RESET_PRECIPITACION } from '../actions/types'
 
 const initialState = {
-    precipitaciones: []
+    precipitaciones: [],
+    multiData: {}
 }
 
 export default function (state = initialState, action) {
@@ -9,7 +10,7 @@ export default function (state = initialState, action) {
         case GET_PRECIPITACIONES:
             return {
                 ...state,
-                precipitaciones: action.payload
+                precipitaciones: action.payload,
             }
         case GET_PRECIPITACION_DEPARTAMENTO:
             return {
@@ -18,12 +19,18 @@ export default function (state = initialState, action) {
             }
         case RESET_PRECIPITACION:
             return {
-                precipitaciones: []
+                precipitaciones: [],
             }
 
+        case 'GET_2B_ARRAY':
+            return {
+                ...state,
+                multiData: action.payload
+            }
         default:
             return {
                 ...state
+
             }
     }
 }
