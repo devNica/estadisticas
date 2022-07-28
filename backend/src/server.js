@@ -1,18 +1,19 @@
 import { api } from './api'
 import express from 'express'
-import constantsConfig from "./config/constants.config"
+import { constants, sequelize } from './config'
 import loader from './loaders/index'
 
 function startServer() {
     const app = express()
     loader.init({
         expressApp: app,
-        expressRoutes: api()
+        expressRoutes: api(),
+        sequelizeConfig: sequelize
     })
 
-    app.listen(constantsConfig.SERVER_PORT, (err)=>{
+    app.listen(constants.SERVER_PORT, (err)=>{
         if(err) console.error(err)
-        console.log(`Server is running on port ${constantsConfig.SERVER_PORT}`)
+        console.log(`Server is running on port ${constants.SERVER_PORT}`)
     })  
 }
 

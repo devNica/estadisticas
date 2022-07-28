@@ -1,8 +1,8 @@
-import constantsConfig from '../config/constants.config'
+import { constants} from '../config/index'
 import testRouter from './routes/test.router'
 
 export const api = () => {
     return [
-        { path: `${constantsConfig.PREFIX}/test`, controller: testRouter}
+        { path: `${constants.PREFIX}/test`, controller: testRouter}
     ]    
 }
