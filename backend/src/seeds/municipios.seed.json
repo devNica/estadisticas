@@ -1186,5 +1186,113 @@
         "fk_departamento": 12,
         "fk_unidad": 5,
         "created_at": "2020-07-28T05:00:00.000Z"
+    },
+    {
+        "id": 100,
+        "nombre": "Somoto",
+        "cabecera": "Somoto",
+        "extension": 466.18,
+        "latitud_norte": "13°29'",
+        "longitud_oeste": "86°35'",
+        "msm": 700.00,
+        "fk_departamento": 13,
+        "fk_unidad": 5,
+        "created_at": "2020-07-28T05:00:00.000Z"
+    },
+    {
+        "id": 101,
+        "nombre": "Las Sabanas",
+        "cabecera": "Las Sabanas",
+        "extension": 64.54,
+        "latitud_norte": "13°20'",
+        "longitud_oeste": "86°37'",
+        "msm": 1260.00,
+        "fk_departamento": 13,
+        "fk_unidad": 5,
+        "created_at": "2020-07-28T05:00:00.000Z"
+    },
+    {
+        "id": 102,
+        "nombre": "Palacaguina",
+        "cabecera": "Palacaguina",
+        "extension": 156.53,
+        "latitud_norte": "13°27'",
+        "longitud_oeste": "86°24'",
+        "msm": 560.00,
+        "fk_departamento": 13,
+        "fk_unidad": 5,
+        "created_at": "2020-07-28T05:00:00.000Z"
+    },
+    {
+        "id": 103,
+        "nombre": "San Jose de Cusmapa",
+        "cabecera": "San Jose de Cusmapa",
+        "extension": 129.92,
+        "latitud_norte": "13°17'",
+        "longitud_oeste": "86°39'",
+        "msm": 1280.00,
+        "fk_departamento": 13,
+        "fk_unidad": 5,
+        "created_at": "2020-07-28T05:00:00.000Z"
+    },
+    {
+        "id": 104,
+        "nombre": "San Juan de Rio Coco",
+        "cabecera": "San Juan de Rio Coco",
+        "extension": 181.65,
+        "latitud_norte": "13°32'",
+        "longitud_oeste": "86°10'",
+        "msm": 840.00,
+        "fk_departamento": 13,
+        "fk_unidad": 5,
+        "created_at": "2020-07-28T05:00:00.000Z"
+    },
+    {
+        "id": 105,
+        "nombre": "San Lucas",
+        "cabecera": "San Lucas",
+        "extension": 152.08,
+        "latitud_norte": "13°24'",
+        "longitud_oeste": "86°36'",
+        "msm": 790.00,
+        "fk_departamento": 13,
+        "fk_unidad": 5,
+        "created_at": "2020-07-28T05:00:00.000Z"
+    },
+    {
+        "id": 106,
+        "nombre": "Telpaneca",
+        "cabecera": "Telpaneca",
+        "extension": 353.28,
+        "latitud_norte": "13°31'",
+        "longitud_oeste": "86°17'",
+        "msm": 500.00,
+        "fk_departamento": 13,
+        "fk_unidad": 5,
+        "created_at": "2020-07-28T05:00:00.000Z"
+    },
+    {
+        "id": 107,
+        "nombre": "Totogalpa",
+        "cabecera": "Totogalpa",
+        "extension": 133.13,
+        "latitud_norte": "13°33'",
+        "longitud_oeste": "86°29'",
+        "msm": 660.80,
+        "fk_departamento": 13,
+        "fk_unidad": 5,
+        "created_at": "2020-07-28T05:00:00.000Z"
+    },
+    {
+        "id": 108,
+        "nombre": "Yalaguina",
+        "cabecera": "Yalaguina",
+        "extension": 70.92,
+        "latitud_norte": "13°29'",
+        "longitud_oeste": "86°30'",
+        "msm": 694.08,
+        "fk_departamento": 13,
+        "fk_unidad": 5,
+        "created_at": "2020-07-28T05:00:00.000Z"
     }
 ]
