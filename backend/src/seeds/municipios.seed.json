@@ -274,5 +274,113 @@
         "fk_departamento": 2,
         "fk_unidad": 5,
         "created_at": "2020-07-28T05:00:00.000Z"
+    },
+    {
+        "id": 24,
+        "nombre": "Managua",
+        "cabecera": "Managua",
+        "extension": 267.17,
+        "latitud_norte": "12°09'",
+        "longitud_oeste": "86°16'",
+        "msm": 82.97,
+        "fk_departamento": 3,
+        "fk_unidad": 5,
+        "created_at": "2020-07-28T05:00:00.000Z"
+    },
+    {
+        "id": 25,
+        "nombre": "Ciudad Sandino",
+        "cabecera": "Ciudad Sandino",
+        "extension": 51.11,
+        "latitud_norte": "12°10'",
+        "longitud_oeste": "86°21'",
+        "msm": 90.00,
+        "fk_departamento": 3,
+        "fk_unidad": 5,
+        "created_at": "2020-07-28T05:00:00.000Z"
+    },
+    {
+        "id": 26,
+        "nombre": "El Crucero",
+        "cabecera": "El Crucero",
+        "extension": 225.72,
+        "latitud_norte": "11°59'",
+        "longitud_oeste": "86°18'",
+        "msm": 860.00,
+        "fk_departamento": 3,
+        "fk_unidad": 5,
+        "created_at": "2020-07-28T05:00:00.000Z"
+    },
+    {
+        "id": 27,
+        "nombre": "Mateare",
+        "cabecera": "Mateare",
+        "extension": 297.40,
+        "latitud_norte": "12°14'",
+        "longitud_oeste": "86°25'",
+        "msm": 50.00,
+        "fk_departamento": 3,
+        "fk_unidad": 5,
+        "created_at": "2020-07-28T05:00:00.000Z"
+    },
+    {
+        "id": 28,
+        "nombre": "San Francisco Libre",
+        "cabecera": "San Francisco Libre",
+        "extension": 668.30,
+        "latitud_norte": "12°30'",
+        "longitud_oeste": "86°18'",
+        "msm": 40.00,
+        "fk_departamento": 3,
+        "fk_unidad": 5,
+        "created_at": "2020-07-28T05:00:00.000Z"
+    },
+    {
+        "id": 29,
+        "nombre": "San Rafael del Sur",
+        "cabecera": "San Rafael del Sur",
+        "extension": 357.30,
+        "latitud_norte": "11°50'",
+        "longitud_oeste": "86°26'",
+        "msm": 123.13,
+        "fk_departamento": 3,
+        "fk_unidad": 5,
+        "created_at": "2020-07-28T05:00:00.000Z"
+    },
+    {
+        "id": 30,
+        "nombre": "Ticuantepe",
+        "cabecera": "Ticuantepe",
+        "extension": 60.79,
+        "latitud_norte": "12°01'",
+        "longitud_oeste": "86°12'",
+        "msm": 290.00,
+        "fk_departamento": 3,
+        "fk_unidad": 5,
+        "created_at": "2020-07-28T05:00:00.000Z"
+    },
+    {
+        "id": 31,
+        "nombre": "Tipitapa",
+        "cabecera": "Tipitapa",
+        "extension": 975.30,
+        "latitud_norte": "12°11'",
+        "longitud_oeste": "86°05'",
+        "msm": 50.44,
+        "fk_departamento": 3,
+        "fk_unidad": 5,
+        "created_at": "2020-07-28T05:00:00.000Z"
+    },
+    {
+        "id": 32,
+        "nombre": "Villa El carmen",
+        "cabecera": "Villa El carmen",
+        "extension": 562.01,
+        "latitud_norte": "11°58'",
+        "longitud_oeste": "86°30'",
+        "msm": 100.00,
+        "fk_departamento": 3,
+        "fk_unidad": 5,
+        "created_at": "2020-07-28T05:00:00.000Z"
     }
 ]
