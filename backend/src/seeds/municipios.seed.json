@@ -835,7 +835,7 @@
         "latitud_norte": "12°06'",
         "longitud_oeste": "85°22'",
         "msm": 116.85,
-        "fk_departamento": 8,
+        "fk_departamento": 9,
         "fk_unidad": 5,
         "created_at": "2020-07-28T05:00:00.000Z"
     },
@@ -847,7 +847,7 @@
         "latitud_norte": "11°58'",
         "longitud_oeste": "85°10'",
         "msm": 99.90,
-        "fk_departamento": 8,
+        "fk_departamento": 9,
         "fk_unidad": 5,
         "created_at": "2020-07-28T05:00:00.000Z"
     },
@@ -859,7 +859,7 @@
         "latitud_norte": "12°17'",
         "longitud_oeste": "85°30'",
         "msm": 270.00,
-        "fk_departamento": 8,
+        "fk_departamento": 9,
         "fk_unidad": 5,
         "created_at": "2020-07-28T05:00:00.000Z"
     },
@@ -871,7 +871,7 @@
         "latitud_norte": "12°12'",
         "longitud_oeste": "85°10'",
         "msm": 498.85,
-        "fk_departamento": 8,
+        "fk_departamento": 9,
         "fk_unidad": 5,
         "created_at": "2020-07-28T05:00:00.000Z"
     },
@@ -883,7 +883,7 @@
         "latitud_norte": "12°07'",
         "longitud_oeste": "85°07'",
         "msm": 340.00,
-        "fk_departamento": 8,
+        "fk_departamento": 9,
         "fk_unidad": 5,
         "created_at": "2020-07-28T05:00:00.000Z"
     },
@@ -895,7 +895,7 @@
         "latitud_norte": "12°15'",
         "longitud_oeste": "85°04'",
         "msm": 503.63,
-        "fk_departamento": 8,
+        "fk_departamento": 9,
         "fk_unidad": 5,
         "created_at": "2020-07-28T05:00:00.000Z"
     },
@@ -907,7 +907,7 @@
         "latitud_norte": "12°04'",
         "longitud_oeste": "85°05'",
         "msm": 410.80,
-        "fk_departamento": 8,
+        "fk_departamento": 9,
         "fk_unidad": 5,
         "created_at": "2020-07-28T05:00:00.000Z"
     },
@@ -919,7 +919,7 @@
         "latitud_norte": "12°02'",
         "longitud_oeste": "84°59'",
         "msm": 306.27,
-        "fk_departamento": 8,
+        "fk_departamento": 9,
         "fk_unidad": 5,
         "created_at": "2020-07-28T05:00:00.000Z"
     },
@@ -931,7 +931,7 @@
         "latitud_norte": "11°55'",
         "longitud_oeste": "84°39'",
         "msm": 180.00,
-        "fk_departamento": 8,
+        "fk_departamento": 9,
         "fk_unidad": 5,
         "created_at": "2020-07-28T05:00:00.000Z"
     },
@@ -943,7 +943,79 @@
         "latitud_norte": "12°16'",
         "longitud_oeste": "85°23'",
         "msm": 320.00,
-        "fk_departamento": 8,
+        "fk_departamento": 9,
+        "fk_unidad": 5,
+        "created_at": "2020-07-28T05:00:00.000Z"
+    },
+    {
+        "id": 80,
+        "nombre": "San Carlos",
+        "cabecera": "San Carlos",
+        "extension": 1444.80,
+        "latitud_norte": "11°07'",
+        "longitud_oeste": "84°46'",
+        "msm": 39.00,
+        "fk_departamento": 10,
+        "fk_unidad": 5,
+        "created_at": "2020-07-28T05:00:00.000Z"
+    },
+    {
+        "id": 81,
+        "nombre": "El Almendro",
+        "cabecera": "El Almendro",
+        "extension": 1009.01,
+        "latitud_norte": "11°40'",
+        "longitud_oeste": "84°42'",
+        "msm": 190.00,
+        "fk_departamento": 10,
+        "fk_unidad": 5,
+        "created_at": "2020-07-28T05:00:00.000Z"
+    },
+    {
+        "id": 82,
+        "nombre": "El Castillo",
+        "cabecera": "Boca de Sabalos",
+        "extension": 1654.81,
+        "latitud_norte": "11°02'",
+        "longitud_oeste": "84°28'",
+        "msm": 50.00,
+        "fk_departamento": 10,
+        "fk_unidad": 5,
+        "created_at": "2020-07-28T05:00:00.000Z"
+    },
+    {
+        "id": 83,
+        "nombre": "Morrito",
+        "cabecera": "Morrito",
+        "extension": 678.94,
+        "latitud_norte": "11°37'",
+        "longitud_oeste": "85°04'",
+        "msm": 45.00,
+        "fk_departamento": 10,
+        "fk_unidad": 5,
+        "created_at": "2020-07-28T05:00:00.000Z"
+    },
+    {
+        "id": 84,
+        "nombre": "San Juan de Nicaragua",
+        "cabecera": "Greytown",
+        "extension": 1656.75,
+        "latitud_norte": "10°55'",
+        "longitud_oeste": "83°42'",
+        "msm": 5.00,
+        "fk_departamento": 10,
+        "fk_unidad": 5,
+        "created_at": "2020-07-28T05:00:00.000Z"
+    },
+    {
+        "id": 85,
+        "nombre": "San Miguelito",
+        "cabecera": "San Miguelito",
+        "extension": 1096.59,
+        "latitud_norte": "11°24'",
+        "longitud_oeste": "84°54'",
+        "msm": 44.00,
+        "fk_departamento": 10,
         "fk_unidad": 5,
         "created_at": "2020-07-28T05:00:00.000Z"
     }
