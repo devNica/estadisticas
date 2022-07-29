@@ -32,6 +32,17 @@ DepartamentoModel.init({
     onDelete: 'RESTRICT',
     onUpdate: 'CASCADE'
   },
+  fk_unidad: {
+    primaryKey: true,
+    type: DataTypes.INTEGER,
+    allowNull: false,
+    references: {
+      model: 'unidad',
+      key: 'id'
+    },
+    onDelete: 'RESTRICT',
+    onUpdate: 'CASCADE'
+  },
   created_at: {
     type: DataTypes.DATE,
     allowNull: false

@@ -5,6 +5,7 @@ import PoblacionDepartamentalGnral from "./poblacion-departamental-gnral.model";
 import PoblacionDepartamentalSeg from "./poblacion-departamental-seg.model";
 import PeriodoModel from "./periodo";
 import SegmentoPoblacionalModel from "./segmento-poblacional.model";
+import UnidadesModel from "./unidades.model";
 
 export {
     DepartamentoModel,
@@ -13,5 +14,6 @@ export {
     SegmentoPoblacionalModel,
     PoblacionDepartamentalGnral,
     PoblacionDepartamentalSeg,
-    ZonaModel
+    ZonaModel,
+    UnidadesModel
 }

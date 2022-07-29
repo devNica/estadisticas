@@ -1,4 +1,4 @@
-import { DepartamentoModel, MunicipioModel, PeriodoModel, PoblacionDepartamentalGnral, PoblacionDepartamentalSeg, SegmentoPoblacionalModel, ZonaModel } from "../models"
+import { DepartamentoModel, MunicipioModel, PeriodoModel, PoblacionDepartamentalGnral, PoblacionDepartamentalSeg, SegmentoPoblacionalModel, UnidadesModel, ZonaModel } from "../models"
 
 
 export async function sequelizeLoader(sequelizeInstance = null) {
@@ -11,9 +11,11 @@ export async function sequelizeLoader(sequelizeInstance = null) {
     DepartamentoModel.hasMany(MunicipioModel, { foreignKey: 'fk_departamento', onDelete: 'RESTRICT' })
     DepartamentoModel.hasMany(PoblacionDepartamentalGnral, { foreignKey: 'fk_departamento', onDelete: 'RESTRICT' })
     DepartamentoModel.hasMany(PoblacionDepartamentalSeg, { foreignKey: 'fk_departamento', onDelete: 'RESTRICT' })
+    DepartamentoModel.belongsTo(UnidadesModel, { foreignKey: 'fk_unidad' })
     
     //MUNICIPIO MODEL
     MunicipioModel.belongsTo(DepartamentoModel, { foreignKey: 'fk_departamento' })
+    MunicipioModel.belongsTo(UnidadesModel, { foreignKey: 'fk_unidad' })
 
     //PERIOODO MODEL
     PeriodoModel.hasMany(PoblacionDepartamentalGnral, { foreignKey: 'fk_periodo', onDelete: 'RESTRICT'})
@@ -31,8 +33,14 @@ export async function sequelizeLoader(sequelizeInstance = null) {
     // SEHMENTO POBLACIONAL MODEL
     SegmentoPoblacionalModel.hasMany(PoblacionDepartamentalSeg, { foreignKey: "fk_segmento" })
 
+    // UNIDAD MODEL
+    UnidadesModel.hasMany(DepartamentoModel, { foreignKey: 'fk_unidad', onDelete: 'RESTRICT' })
+    UnidadesModel.hasMany(MunicipioModel, { foreignKey: 'fk_unidad', onDelete: 'RESTRICT' })
+    UnidadesModel.hasMany(ZonaModel, { foreignKey: 'fk_unidad', onDelete: 'RESTRICT' })
+
     //ZONA MODEL
     ZonaModel.hasMany(DepartamentoModel, { foreignKey: 'fk_zona', onDelete: 'RESTRICT' })
+    ZonaModel.belongsTo(UnidadesModel, { foreignKey: "fk_unidad" })
 
 
     // await sequelizeInstance.sync({ alter: false})

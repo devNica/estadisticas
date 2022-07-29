@@ -1,0 +1,138 @@
+[
+    {
+        "id": 1,
+        "nombre": "Chinandega",
+        "extension": 4822.42,
+        "fk_zona": 1,
+        "fk_unidad": 5,
+        "created_at": "2020-07-28T05:00:00.000Z"
+    },
+    {
+        "id": 2,
+        "nombre": "Leon",
+        "extension": 5138.03,
+        "fk_zona": 1,
+        "fk_unidad": 5,
+        "created_at": "2020-07-28T05:00:00.000Z"
+    },
+    {
+        "id": 3,
+        "nombre": "Managua",
+        "extension": 3465.10,
+        "fk_zona": 1,
+        "fk_unidad": 5,
+        "created_at": "2020-07-28T05:00:00.000Z"
+    },
+    {
+        "id": 4,
+        "nombre": "Masaya",
+        "extension": 610.78,
+        "fk_zona": 1,
+        "fk_unidad": 5,
+        "created_at": "2020-07-28T05:00:00.000Z"
+    },
+    {
+        "id": 5,
+        "nombre": "Granada",
+        "extension": 1039.68,
+        "fk_zona": 1,
+        "fk_unidad": 5,
+        "created_at": "2020-07-28T05:00:00.000Z"
+    },
+    {
+        "id": 6,
+        "nombre": "Carazo",
+        "extension": 1081.40,
+        "fk_zona": 1,
+        "fk_unidad": 5,
+        "created_at": "2020-07-28T05:00:00.000Z"
+    },
+    {
+        "id": 7,
+        "nombre": "Rivas",
+        "extension": 2161.82,
+        "fk_zona": 1,
+        "fk_unidad": 5,
+        "created_at": "2020-07-28T05:00:00.000Z"
+    },
+    {
+        "id": 8,
+        "nombre": "Boaco",
+        "extension": 4176.68,
+        "fk_zona": 2,
+        "fk_unidad": 5,
+        "created_at": "2020-07-28T05:00:00.000Z"
+    },
+    {
+        "id": 9,
+        "nombre": "Chontales",
+        "extension": 6481.27,
+        "fk_zona": 2,
+        "fk_unidad": 5,
+        "created_at": "2020-07-28T05:00:00.000Z"
+    },
+    {
+        "id": 10,
+        "nombre": "Rio San Juan",
+        "extension": 7540.90,
+        "fk_zona": 2,
+        "fk_unidad": 5,
+        "created_at": "2020-07-28T05:00:00.000Z"
+    },
+    {
+        "id": 11,
+        "nombre": "Esteli",
+        "extension": 2229.69,
+        "fk_zona": 3,
+        "fk_unidad": 5,
+        "created_at": "2020-07-28T05:00:00.000Z"
+    },
+    {
+        "id": 12,
+        "nombre": "Jinotega",
+        "extension": 9222.40,
+        "fk_zona": 3,
+        "fk_unidad": 5,
+        "created_at": "2020-07-28T05:00:00.000Z"
+    },
+    {
+        "id": 13,
+        "nombre": "Madriz",
+        "extension": 1708.23,
+        "fk_zona": 3,
+        "fk_unidad": 5,
+        "created_at": "2020-07-28T05:00:00.000Z"
+    },
+    {
+        "id": 14,
+        "nombre": "Matagalpa",
+        "extension": 6803.86,
+        "fk_zona": 3,
+        "fk_unidad": 5,
+        "created_at": "2020-07-28T05:00:00.000Z"
+    },
+    {
+        "id": 15,
+        "nombre": "Nueva Segovia",
+        "extension": 3491.28,
+        "fk_zona": 3,
+        "fk_unidad": 5,
+        "created_at": "2020-07-28T05:00:00.000Z"
+    },
+    {
+        "id": 14,
+        "nombre": "Region Autonoma Costa Caribe Norte",
+        "extension": 33105.98,
+        "fk_zona": 4,
+        "fk_unidad": 5,
+        "created_at": "2020-07-28T05:00:00.000Z"
+    },
+    {
+        "id": 15,
+        "nombre": "Region Autonoma Costa Caribe Sur",
+        "extension": 27260.02,
+        "fk_zona": 4,
+        "fk_unidad": 5,
+        "created_at": "2020-07-28T05:00:00.000Z"
+    }
+]

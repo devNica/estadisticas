@@ -25,6 +25,17 @@ ZonaModel.init({
     type: DataTypes.DATE,
     allowNull: false
   },
+  fk_unidad: {
+    primaryKey: true,
+    type: DataTypes.INTEGER,
+    allowNull: false,
+    references: {
+      model: 'unidad',
+      key: 'id'
+    },
+    onDelete: 'RESTRICT',
+    onUpdate: 'CASCADE'
+  },
   is_active: {
     type: DataTypes.BOOLEAN,
     allowNull: false,

@@ -2,9 +2,9 @@ import Sequelize from 'sequelize'
 import { sequelize } from '../config'
 const { DataTypes, Model } = Sequelize
 
-export default class SegmentoPoblacionalModel extends Model {}
+export default class UnidadesModel extends Model {}
 
-SegmentoPoblacionalModel.init({
+UnidadesModel.init({
   id: {
     autoIncrement: true,
     primaryKey: true,
@@ -12,17 +12,12 @@ SegmentoPoblacionalModel.init({
     allowNull: false,
     unique: true
   },
-  segmento: {
-    type: DataTypes.STRING(4),
+  unidad: {
+    type: DataTypes.STRING(10),
     allowNull: false,
     unique: true
-  },
-  is_active: {
-    type: DataTypes.BOOLEAN,
-    allowNull: false,
-    defaultValue: 1
   }
 }, {
   sequelize,
-  modelName: 'segmento_poblacional'
+  modelName: 'unidad'
 })
