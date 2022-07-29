@@ -382,5 +382,113 @@
         "fk_departamento": 3,
         "fk_unidad": 5,
         "created_at": "2020-07-28T05:00:00.000Z"
+    },
+    {
+        "id": 33,
+        "nombre": "Masaya",
+        "cabecera": "Masaya",
+        "extension": 146.62,
+        "latitud_norte": "11°58'",
+        "longitud_oeste": "86°05'",
+        "msm": 234.00,
+        "fk_departamento": 4,
+        "fk_unidad": 5,
+        "created_at": "2020-07-28T05:00:00.000Z"
+    },
+    {
+        "id": 34,
+        "nombre": "Catarina",
+        "cabecera": "Catarina",
+        "extension": 11.49,
+        "latitud_norte": "11°54'",
+        "longitud_oeste": "86°04'",
+        "msm": 520.36,
+        "fk_departamento": 4,
+        "fk_unidad": 5,
+        "created_at": "2020-07-28T05:00:00.000Z"
+    },
+    {
+        "id": 35,
+        "nombre": "La Concepcion",
+        "cabecera": "La Concepcion",
+        "extension": 65.67,
+        "latitud_norte": "11°56'",
+        "longitud_oeste": "86°11'",
+        "msm": 460.00,
+        "fk_departamento": 4,
+        "fk_unidad": 5,
+        "created_at": "2020-07-28T05:00:00.000Z"
+    },
+    {
+        "id": 36,
+        "nombre": "Masatepe",
+        "cabecera": "Masatepe",
+        "extension": 59.40,
+        "latitud_norte": "11°55'",
+        "longitud_oeste": "86°08'",
+        "msm": 455.41,
+        "fk_departamento": 4,
+        "fk_unidad": 5,
+        "created_at": "2020-07-28T05:00:00.000Z"
+    },
+    {
+        "id": 37,
+        "nombre": "Nandasmo",
+        "cabecera": "Nandasmo",
+        "extension": 17.63,
+        "latitud_norte": "11°55'",
+        "longitud_oeste": "86°07'",
+        "msm": 400.00,
+        "fk_departamento": 4,
+        "fk_unidad": 5,
+        "created_at": "2020-07-28T05:00:00.000Z"
+    },
+    {
+        "id": 38,
+        "nombre": "Nindiri",
+        "cabecera": "Nindiri",
+        "extension": 142.91,
+        "latitud_norte": "12°00'",
+        "longitud_oeste": "86°07'",
+        "msm": 220.00,
+        "fk_departamento": 4,
+        "fk_unidad": 5,
+        "created_at": "2020-07-28T05:00:00.000Z"
+    },
+    {
+        "id": 39,
+        "nombre": "Niquinohomo",
+        "cabecera": "Niquinohomo",
+        "extension": 31.69,
+        "latitud_norte": "11°54'",
+        "longitud_oeste": "86°05'",
+        "msm": 440.00,
+        "fk_departamento": 4,
+        "fk_unidad": 5,
+        "created_at": "2020-07-28T05:00:00.000Z"
+    },
+    {
+        "id": 40,
+        "nombre": "San Juan de Oriente",
+        "cabecera": "San Juan de Oriente",
+        "extension": 9.20,
+        "latitud_norte": "11°54'",
+        "longitud_oeste": "86°04'",
+        "msm": 495.16,
+        "fk_departamento": 4,
+        "fk_unidad": 5,
+        "created_at": "2020-07-28T05:00:00.000Z"
+    },
+    {
+        "id": 41,
+        "nombre": "Tisma",
+        "cabecera": "Tisma",
+        "extension": 126.17,
+        "latitud_norte": "12°04'",
+        "longitud_oeste": "86°01'",
+        "msm": 50.00,
+        "fk_departamento": 4,
+        "fk_unidad": 5,
+        "created_at": "2020-07-28T05:00:00.000Z"
     }
 ]
