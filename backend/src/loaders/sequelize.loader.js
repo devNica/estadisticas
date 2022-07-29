@@ -1,4 +1,13 @@
-import { DepartamentoModel, MunicipioModel, PeriodoModel, PoblacionDepartamentalGnral, PoblacionDepartamentalSeg, SegmentoPoblacionalModel, UnidadesModel, ZonaModel } from "../models"
+import { 
+    DepartamentoModel, 
+    MunicipioModel, 
+    PeriodoModel, 
+    PoblacionDepartamentalGnral, 
+    PoblacionDepartamentalSeg, 
+    SegmentoPoblacionalModel, 
+    UnidadesModel, 
+    ZonaModel 
+} from "../models"
 
 
 export async function sequelizeLoader(sequelizeInstance = null) {
@@ -43,9 +52,9 @@ export async function sequelizeLoader(sequelizeInstance = null) {
     ZonaModel.belongsTo(UnidadesModel, { foreignKey: "fk_unidad" })
 
 
-    // await sequelizeInstance.sync({ alter: false})
-    // .then(()=> {
-    //     console.log('all models has been created')
-    // })
-    // .catch(err => console.error(err))
+    await sequelizeInstance.sync({ alter: false})
+    .then(()=> {
+        console.log('all models has been created')
+    })
+    .catch(err => console.error(err))
 }

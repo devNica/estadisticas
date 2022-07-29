@@ -1,5 +1,6 @@
 import express from 'express'
 import pkg from '../../../package.json'
+import dataMigrations from '../../migrations/data-migrations'
 
 const testRouter = express.Router()
 const app = express()
@@ -13,6 +14,15 @@ testRouter.get('/', (_req, res)=>{
     }
 
     res.json(info)
+})
+
+testRouter.get('/run-migration', async(req, res)=>{
+    try {
+        const response = await dataMigrations.runMigration()
+        res.json({ response })
+    } catch (error) {
+        res.json({ message: error.message })
+    }
 })
 
 export default testRouter
