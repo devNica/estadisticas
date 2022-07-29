@@ -1,0 +1,20 @@
+.btn-search{
+    right: 5px;
+}
+
+.icon-search{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    font-size: 1.3rem;
+
+}
+
+.avatar{
+    max-width: 48px;
+}
+
+.navbar {
+    height: 80px;
+    background-color: rgb(255, 255, 255);
+}
