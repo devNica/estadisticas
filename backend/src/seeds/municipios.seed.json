@@ -1594,5 +1594,101 @@
         "fk_departamento": 15,
         "fk_unidad": 5,
         "created_at": "2020-07-28T05:00:00.000Z"
+    },
+    {
+        "id": 134,
+        "nombre": "Puerto Cabezas",
+        "cabecera": "Bilwi",
+        "extension": 5984.81,
+        "latitud_norte": "14°01'",
+        "longitud_oeste": "82°23'",
+        "msm": 10.00,
+        "fk_departamento": 16,
+        "fk_unidad": 5,
+        "created_at": "2020-07-28T05:00:00.000Z"
+    },
+    {
+        "id": 135,
+        "nombre": "Bonanza",
+        "cabecera": "Bonanza",
+        "extension": 1897.94,
+        "latitud_norte": "14°01'",
+        "longitud_oeste": "84°35'",
+        "msm": 180.00,
+        "fk_departamento": 16,
+        "fk_unidad": 5,
+        "created_at": "2020-07-28T05:00:00.000Z"
+    },
+    {
+        "id": 136,
+        "nombre": "Mulukuku",
+        "cabecera": "Mulukuku",
+        "extension": 1904.53,
+        "latitud_norte": "13°10'",
+        "longitud_oeste": "84°57'",
+        "msm": 80.00,
+        "fk_departamento": 16,
+        "fk_unidad": 5,
+        "created_at": "2020-07-28T05:00:00.000Z"
+    },
+    {
+        "id": 137,
+        "nombre": "Prinzapolka",
+        "cabecera": "Prinzapolka",
+        "extension": 7020.48,
+        "latitud_norte": "13°24'",
+        "longitud_oeste": "83°33'",
+        "msm": 5.00,
+        "fk_departamento": 16,
+        "fk_unidad": 5,
+        "created_at": "2020-07-28T05:00:00.000Z"
+    },
+    {
+        "id": 138,
+        "nombre": "Rosita",
+        "cabecera": "Rosita",
+        "extension": 2205.42,
+        "latitud_norte": "13°55'",
+        "longitud_oeste": "84°24'",
+        "msm": 60.00,
+        "fk_departamento": 16,
+        "fk_unidad": 5,
+        "created_at": "2020-07-28T05:00:00.000Z"
+    },
+    {
+        "id": 139,
+        "nombre": "Siuna",
+        "cabecera": "Siuna",
+        "extension": 3421.58,
+        "latitud_norte": "13°44'",
+        "longitud_oeste": "84°46'",
+        "msm": 200.00,
+        "fk_departamento": 16,
+        "fk_unidad": 5,
+        "created_at": "2020-07-28T05:00:00.000Z"
+    },
+    {
+        "id": 140,
+        "nombre": "Waslala",
+        "cabecera": "Waslala",
+        "extension": 1329.51,
+        "latitud_norte": "13°20'",
+        "longitud_oeste": "85°22'",
+        "msm": 420.00,
+        "fk_departamento": 16,
+        "fk_unidad": 5,
+        "created_at": "2020-07-28T05:00:00.000Z"
+    },
+    {
+        "id": 141,
+        "nombre": "Waspan",
+        "cabecera": "Waspan",
+        "extension": 9341.71,
+        "latitud_norte": "14°44'",
+        "longitud_oeste": "83°58'",
+        "msm": 30.00,
+        "fk_departamento": 16,
+        "fk_unidad": 5,
+        "created_at": "2020-07-28T05:00:00.000Z"
     }
 ]
