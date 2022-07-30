@@ -16,5 +16,5 @@
 
 .navbar {
     height: 80px;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--bg-white-secondary);
 }

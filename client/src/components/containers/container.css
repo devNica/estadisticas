@@ -1,20 +1,20 @@
-.container-flex{
+.container_flex{
     display: flex !important;
 }
 
-.container-navbar{
+.container_navbar{
     flex-grow: 2;
     font-family: 'Oswald', sans-serif;
-    background-color: rgb(221, 220, 220);
+    background-color: var(--bg-gray-main);
 }
 
-.content-dashboard{
+.content_dashboard{
     overflow-y: auto;
     height: 100vh;
     padding-bottom: 5rem;
     
 }
 
-.line{
+.container_separator{
     margin-top: 0 !important;
 }

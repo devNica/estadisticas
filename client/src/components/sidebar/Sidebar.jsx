@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import { SiGooglestreetview } from 'react-icons/si';
+import { HiOutlineViewGrid } from 'react-icons/hi';
 import { BiWorld } from 'react-icons/bi'
 
 import './sidebar.css'
@@ -8,12 +8,12 @@ const Sidebar = () => {
 
     return (
         <Fragment>
-            <div className="sidebar-container">
-                <div className="logo">
-                    <BiWorld/> <span className="title-logo">L&D</span> 
+            <div className="sidebar_container">
+                <div className="sidebar_logo">
+                    <BiWorld/> <span className="sidebar_title_logo">L&D</span> 
                 </div>
-                <div className="menu">
-                    <a href="#" className="menu-link"><SiGooglestreetview /><span className="menu-title">Info Zonas</span></a>
+                <div className="sidebar_menu">
+                    <a href="#" className="sidebar_menu_link"><HiOutlineViewGrid /><span className="sidebar_menu_title">Info Zonas</span></a>
                 </div>
             </div>
 

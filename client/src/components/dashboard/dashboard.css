@@ -2,19 +2,18 @@
     margin: 5px 12px;
 }
 
-.dashboard-msg{
-    color: rgb(117, 117, 117);
+.dashboard_msg{
+    color: var(--bg-gray-tertiary);
     font-size: 1.2rem;
 }
 
-.dashboard-welcome{
-    color: rgb(35, 48, 85);
+.dashboard_welcome{
+    color: var(--bg-blue-primary);
 }
 
 .dashboard .row{
-    background-color: rgb(255, 255, 255);
+    background-color: var(--bg-white-main);
     margin: 0.2rem;
     padding: 0.5rem;
     border-radius: 12px;
-    box-shadow: 10px 10px 10px rgb(204, 204, 204);
 }
