@@ -1,4 +1,3 @@
-import React, { } from 'react'
 import { HiSearch } from 'react-icons/hi'
 import './navbar.css'
 import noImg from './perfil.png';

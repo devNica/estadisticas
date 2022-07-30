@@ -1,4 +1,4 @@
-import React from 'react'
+import { Outlet } from 'react-router-dom'
 import './dashboard.css'
 
 const Dashboard = () => {
@@ -6,16 +6,7 @@ const Dashboard = () => {
         <section>
             <div className="dashboard">
                 <div className="row">
-                    <div className="col-lg-9">
-                        <h1 className="dashboard_welcome">Bienvenido Lucas Andres Marsell</h1>
-                        <p className="dashboard_msg">Revisa la ultima información</p>
-                    </div>
-                    <div className="col-lg-3">
-
-                    </div>
-                </div>
-                <div className="row">
-                    {/* <Login/> */}
+                    <Outlet/>
                 </div>
             </div>
         </section>

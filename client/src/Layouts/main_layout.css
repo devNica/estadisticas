@@ -1,20 +1,20 @@
-.container_flex{
+.main_layout{
     display: flex !important;
 }
 
-.container_navbar{
+.main_layout_navbar{
     flex-grow: 2;
     font-family: 'Oswald', sans-serif;
     background-color: var(--bg-gray-main);
 }
 
-.content_dashboard{
+.main_layout_separator{
+    margin-top: 0 !important;
+}
+
+.main_layout_dashboard{
     overflow-y: auto;
     height: 100vh;
     padding-bottom: 5rem;
-    
 }
 
-.container_separator{
-    margin-top: 0 !important;
-}
