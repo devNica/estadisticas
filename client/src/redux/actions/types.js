@@ -1,0 +1,1 @@
+export const FETCH_ZONES = 'FETCH_ZONES'
