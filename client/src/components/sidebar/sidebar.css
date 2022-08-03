@@ -10,7 +10,7 @@
     padding: .875rem 1.25rem;
     color: var(--bg-white-quaternary);
     font-size: 1.8rem;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Bebas Neue', cursive;
     background-color: var(--bg-dark-primary);
     display: flex;
     flex-direction: row;
@@ -37,13 +37,14 @@
 
 .sidebar_menu_title {
     margin-left: 0.5rem;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.4rem;
 }
 
 .sidebar_menu a:hover{
     background-color: var(--bg-dark-primary);
     text-decoration: none;
     color: var(--bg-white-secondary) !important;
-    font-family: 'Oswald', sans-serif;
     font-style: italic;
     border-radius: 12px;
     justify-content: center;

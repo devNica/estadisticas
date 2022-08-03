@@ -21,7 +21,7 @@ const Navbar = () => {
                     <li className="nav-item dropdown">
                         <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <img src="" alt="" src={noImg} className="img-fluid rounded-circle avatar mr-2" />
-                            LMARSELL
+                            <span className='profile_name'>LMARSELL</span>
                         </a>
                         <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a className="dropdown-item" href="#">Perfil</a>

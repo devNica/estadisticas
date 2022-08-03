@@ -1,0 +1,10 @@
+.sort{
+    margin-left: 0.6rem;
+    vertical-align: middle;
+    color: #383429;
+}
+
+.sort :hover{
+    cursor: pointer;
+    color: #eebb14;
+}
