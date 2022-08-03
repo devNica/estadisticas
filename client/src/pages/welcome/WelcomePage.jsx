@@ -1,5 +1,5 @@
+const WelcomePage = ({ fetchZones }) => {
 
-const WelcomePage = () => {
     return (
         <div className="row">
             <div className="col-lg-9">

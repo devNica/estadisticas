@@ -1,7 +1,24 @@
 import CustomDataTable from '../../components/DataTable/CustomDataTable'
+import { connect } from 'react-redux'
+import { fetchZones } from '../../redux/actions/geographic'
+import { useCallback, useEffect } from 'react'
 import './zones.css'
 
-const ZonesPage = () => {
+const actionRedux = {
+    fetchZones
+}
+
+const ZonesPage = ({ fetchZones }) => {
+
+    const fetchZonesFromRedux = useCallback(async()=>{
+        await fetchZones()
+    }, [fetchZones])
+
+
+    useEffect(()=>{
+        fetchZonesFromRedux()
+    }, [fetchZonesFromRedux])
+
     return(
         <div className='zones_pages'>
             <div className="row">
@@ -13,7 +30,7 @@ const ZonesPage = () => {
                    <span className='zones_pages_subtitle'>Lista de Zonas geograficas de Nicaragua</span>   
                 </div>
                 <div className="card-body">
-                  <CustomDataTable/>
+                  <CustomDataTable strategy={'ZONES'}/>
                 </div>
                 <div className="card-footer">
                     <span className='disclaimer'>****Informacion recopilada del anuario estadistico INIDE***</span>
@@ -24,4 +41,4 @@ const ZonesPage = () => {
     )
 }
 
-export default ZonesPage
+export default connect(null, actionRedux)(ZonesPage)

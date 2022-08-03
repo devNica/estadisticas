@@ -11,15 +11,6 @@ import './app.css'
 
 function App() {
 
-  const testServer = useCallback(async () => {
-    console.log(await testRouter.info())
-
-  }, [])
-
-  useEffect(() => {
-    testServer()
-  })
-
   return (
     <Provider store={store}>
       <Routes>

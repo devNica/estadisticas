@@ -7,7 +7,12 @@ const testRouter = {
     info: async () => await httpHandler(HTTP.GET, `${ROUTES_PREFIX}/test`)
 }
 
+const geoRouter = {
+    fetchZones: async () => httpHandler(HTTP.GET, `${ROUTES_PREFIX}/geo/zones`)
+}
+
 
 export {
-    testRouter
+    testRouter,
+    geoRouter
 }

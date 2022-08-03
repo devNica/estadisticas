@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-pascal-case */
 import React from 'react'
 import { DataTableHelper } from '../../helpers/DataTableHelper'
-import zonesList from '../../helpers/zones.json'
+import  { connect } from 'react-redux'
 
 const config = [
     { col: 0 },
@@ -9,13 +9,17 @@ const config = [
     { col: 2 }
 ]
 
-const CustomDataTable = () => {
+const mapStateToProps = (state) =>({
+    zones: state.geo.zones
+})
+
+const CustomDataTable = ({ zones, strategy }) => {
 
     return (
         <div>
-            <DataTableHelper.selectInfoRepresentation strategy={'ZONES'} data={zonesList} isDT={true} configSorting={config}/>
+            <DataTableHelper.selectInfoRepresentation strategy={strategy} data={zones} isDT={true} configSorting={config}/>
         </div>
     )
 }
 
-export default CustomDataTable
+export default connect(mapStateToProps, null)(CustomDataTable)

@@ -1,4 +1,4 @@
-import ZoneModel from "../models/zone.model"
+import { ZoneModel } from "../models/index"
 import CustomTable from "../components/Table/CustomTable"
 
 

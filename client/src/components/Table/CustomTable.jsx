@@ -4,7 +4,6 @@ import './customtable.css'
 
 
 const CustomTable = ({ model, data, isDT,  }) => {
-    
     const renderHeaders = model.map((el, i) => (
         // eslint-disable-next-line react/jsx-pascal-case
         <th key={i}><span>{el.label}</span>{el.isSort && isDT ? <SortHelper.selectIconSort strategy={el.typeSort}/> : <></> }</th>
