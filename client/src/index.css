@@ -1,0 +1,75 @@
+:root {
+    --bg-dark-primary: #324a5f;
+    --bg-dark-secondary: #1b2a41;
+    --bg-dark-tertiary: #0c1821;
+    --bg-dark-quaternary: #000000;
+    --bg-gray-primary: #dee2e6;
+    --bg-gray-secondary: #ced4da;
+    --bg-gray-tertiary: #6c757d;
+    --bg-gray-quaternary: #6c757d;
+    --bg-sky-primary: #00e2fe;
+    --bg-sky-secondary: #00d4fd;
+    --bg-sky-tertiary: #00b7fc;
+    --bg-sky-quaternary: #009afb;
+    --bg-orange-primary: #ff9e00;
+    --bg-orange-secondary: #ff8500;
+    --bg-orange-tertiary: #ff7900;
+    --bg-orange-quaternary: #ff6d00;
+    --bg-white-primary: #fafaff;
+    --bg-white-secondary: #f8f8f8;
+    --bg-white-tertiary: #f3f8f2;
+    --bg-white-quaternary: #f9f9f9;
+    --bg-blue-primary: #2196f3;
+    --bg-blue-secondary: #1e88e5;
+    --bg-blue-tertiary: #1565c0;
+    --bg-blue-quaternary: #0d47a1;
+    --bg-yellow-primary: #ffea00;
+    --bg-yellow-secondary: #ffd000;
+    --bg-yellow-tertiary: #ffc300;
+    --bg-yellow-quaternary: #ffaa00;
+    --bg-brown-primary: #cd9777;
+    --bg-brown-secondary: #b07d62;
+    --bg-brown-tertiary: #8a5a44;
+    --bg-brown-quaternary: #774936;
+    --bg-green-primary: #00ff00;
+    --bg-green-secondary: #00e600;
+    --bg-green-tertiary: #00b300;
+    --bg-green-quaternary: #009900;
+    --bg-red-primary: #f92432;
+    --bg-red-secondary: #e30613;
+    --bg-red-tertiary: #c70512;
+    --bg-red-quaternary: #77030b;
+    --bg-violet-primary: #9d4edd;
+    --bg-violet-secondary: #5a189a;
+    --bg-violet-tertiary: #3c096c;
+    --bg-violet-quaternary: #240046;
+    --bg-turquoise-primary: #40c0c0;
+    --bg-turquoise-secondary: #2ca3a6;
+    --bg-turquoise-tertiary: #19878d;
+    --bg-turquoise-quaternary: #056a73;
+    --bg-pink-primary: #ff74b2;
+    --bg-pink-secondary: #ff4598;
+    --bg-pink-tertiary: #ff177f;
+    --bg-pink-quaternary: #ff0072;
+    --bg-white-main: #ffffff;
+    --bg-gray-main: #b7b7b7;
+
+    --transition-02: all 0.2s ease;
+    --transition-03: all 0.3s ease;
+    --transition-04: all 0.4s ease;
+    --transition-05: all 0.5s ease;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+body {
+    height: 100vh;
+    background-color: var(--bg-gray-main);
+}

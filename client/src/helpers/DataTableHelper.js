@@ -1,7 +1,6 @@
 import { ZoneModel } from "../models/index"
 import CustomTable from "../components/Table/CustomTable"
 
-
 const modelStrategies = {}
 
 modelStrategies.ZONES = ZoneModel

@@ -1,1 +1,3 @@
 export const FETCH_ZONES = 'FETCH_ZONES'
+export const GET_CHARTDATA = 'GET_CHARTDATA'
+export const RESET_CHARTDATA = 'RESET_CHARTDATA'

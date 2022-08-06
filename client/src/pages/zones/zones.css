@@ -1,15 +1,5 @@
-.zones_pages .card .card-header{
-    background-color: var(--bg-white-main);
-    color: var(--bg-dark-tertiary);
-}
-
-.zones_pages .card .card-body{
-    background-color: var(--bg-blue-secondary);
-}
-
-.zones_pages .card .card-footer{
-    background-color: var(--bg-white-main);
-    color: var(--bg-dark-tertiary);
+.zones_pages{
+    background-color: var(--bg-white-tertiary);
 }
 
 .zones_pages_title{

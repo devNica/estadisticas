@@ -1,7 +1,9 @@
+import React from 'react'
 import CustomDataTable from '../../components/DataTable/CustomDataTable'
 import { connect } from 'react-redux'
 import { fetchZones } from '../../redux/actions/geographic'
 import { useCallback, useEffect } from 'react'
+import ZonasChart from '../../components/charts/geo/ZonasChart'
 import './zones.css'
 
 const actionRedux = {
@@ -10,34 +12,31 @@ const actionRedux = {
 
 const ZonesPage = ({ fetchZones }) => {
 
-    const fetchZonesFromRedux = useCallback(async()=>{
+    const fetchZonesFromRedux = useCallback(async () => {
         await fetchZones()
     }, [fetchZones])
 
 
-    useEffect(()=>{
+    useEffect(() => {
         fetchZonesFromRedux()
     }, [fetchZonesFromRedux])
 
-    return(
+    return (
         <div className='zones_pages'>
-            <div className="row">
+            <div className="">
                 <h2 className='zones_pages_title'>Seccion de Informacion de Zonas Geograficas</h2>
             </div>
-            
-            <div className="card mx-1 mt-3">
-                <div className="card-header">
-                   <span className='zones_pages_subtitle'>Lista de Zonas geograficas de Nicaragua</span>   
+
+            <div className="page_container">
+                <div className="left_container">
+                    <CustomDataTable strategy={'ZONES'} />
                 </div>
-                <div className="card-body">
-                  <CustomDataTable strategy={'ZONES'}/>
-                </div>
-                <div className="card-footer">
-                    <span className='disclaimer'>****Informacion recopilada del anuario estadistico INIDE***</span>
+                <div className="rigth_container">
+                    <ZonasChart />
                 </div>
             </div>
         </div>
-        
+
     )
 }
 
