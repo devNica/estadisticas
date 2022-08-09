@@ -1,0 +1,21 @@
+aside{
+    height: 100vh;
+}
+
+aside .top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.4rem;
+}
+
+aside .logo{
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+aside .logo img{
+    width: 2.5rem;
+    height: 2.5rem;
+}

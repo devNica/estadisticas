@@ -1,18 +1,17 @@
 import React from 'react'
-
-import { Outlet } from 'react-router-dom'
+import Card from '../cards/Card'
 import './dashboard.css'
 
 const Dashboard = () => {
     return (
-        <section className='dashboard'>
-            <div className="row border border-primary">
-                <div className="col-12 col-sm-12">
-                    <Outlet />
-                </div>
+        <main>
+            <h1>Dashboard</h1>
+            <div className="cards">
+                <Card/>
+                <Card/>
+                <Card/>
             </div>
-
-        </section>
+        </main>
     )
 }
 

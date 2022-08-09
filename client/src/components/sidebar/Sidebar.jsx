@@ -1,24 +1,30 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
-import { HiOutlineViewGrid } from 'react-icons/hi';
-import { BiWorld } from 'react-icons/bi'
-
 import './sidebar.css'
+import { Link } from 'react-router-dom'
 
 const Sidebar = () => {
 
     return (
-        <>
-            <div className="sidebar_container">
-                <div className="sidebar_logo">
-                    <BiWorld/> <span className="sidebar_title_logo">L&D</span> 
-                </div>
-                <div className="sidebar_menu">
-                    <Link to ="/zones" className="sidebar_menu_link"><HiOutlineViewGrid /><span className="sidebar_menu_title">Info Zonas</span></Link>
-                </div>
-            </div>
-
-        </>
+        <div className="sidebar">
+            <Link to="/dashboard" className='sidebar_nav_link active'>
+                <span>
+                    <i class="bi bi-grid"></i>
+                </span>
+                <h3 className='sidebar_nav_title'>Dashboard</h3>
+            </Link>
+            <Link to="/dashboard" className='sidebar_nav_link'>
+                <span>
+                    <i class="bi bi-columns"></i>
+                </span>
+                <h3 className='sidebar_nav_title'>Zonas</h3>
+            </Link>
+            <Link to="/dashboard" className='sidebar_nav_link'>
+                <span>
+                    <i class="bi bi-box-arrow-right"></i>
+                </span>
+                <h3 className='sidebar_nav_title'>Logout</h3>
+            </Link>
+        </div>
     )
 }
 
