@@ -1,0 +1,78 @@
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
+}
+
+.card {
+    background: var(--bg-white-quaternary);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-top: 1rem;
+    box-shadow: var(--box-shadow);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: none;
+}
+
+.card span {
+    background: var(--bg-blue-primary);
+    padding: 0.5rem;
+    border-radius: 18%;
+    color: var(--bg-white-primary);
+    font-size: 1.6rem;
+}
+
+.card .card-middle {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card h3{
+    margin: 1rem 0 0.6rem;
+    font-size: 1rem;
+}
+
+.card .progress{
+    position: relative;
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+}
+
+.card .progress svg{
+    width: 7rem;
+    height: 7rem;
+}
+
+.card .progress svg circle{
+    fill: none;
+    stroke: var(--bg-blue-primary);
+    stroke-width: 14;
+    stroke-linecap: round;
+    transform: translate(5px, 5px);
+    stroke-dashoffset: 60;
+    stroke-dasharray: 220;
+}
+
+.card .progress .number{
+    position: absolute;
+    top: 0; 
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.cards .card-footer{
+    margin-top: 1.3rem;
+    display: block;
+    color: var(--bg-gray-tertiary);
+}

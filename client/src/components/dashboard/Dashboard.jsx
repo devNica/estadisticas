@@ -1,16 +1,12 @@
 import React from 'react'
-import Card from '../cards/Card'
 import './dashboard.css'
+import { Outlet } from 'react-router-dom'
 
 const Dashboard = () => {
     return (
         <main>
-            <h1>Dashboard</h1>
-            <div className="cards">
-                <Card/>
-                <Card/>
-                <Card/>
-            </div>
+            <h1 className='dashboard_title'>DASHBOARD</h1>
+            <Outlet/>
         </main>
     )
 }

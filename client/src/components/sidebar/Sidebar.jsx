@@ -6,13 +6,13 @@ const Sidebar = () => {
 
     return (
         <div className="sidebar">
-            <Link to="/dashboard" className='sidebar_nav_link active'>
+            <Link to="/dashboard" className='sidebar_nav_link'>
                 <span>
                     <i class="bi bi-grid"></i>
                 </span>
                 <h3 className='sidebar_nav_title'>Dashboard</h3>
             </Link>
-            <Link to="/dashboard" className='sidebar_nav_link'>
+            <Link to="/dashboard" className='sidebar_nav_link active'>
                 <span>
                     <i class="bi bi-columns"></i>
                 </span>

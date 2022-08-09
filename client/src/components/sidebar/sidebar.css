@@ -42,7 +42,7 @@
     content: "";
     width: 6px;
     height: 100%;
-    background: var(--bg-pink-tertiary);
+    background: var(--bg-blue-primary);
 }
 
 .sidebar a.active span {
