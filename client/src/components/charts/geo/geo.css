@@ -1,0 +1,57 @@
+.charts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.options_container {
+    width: 100%;
+    margin: 1rem 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.options_container input {
+    display: none;
+}
+
+.options_container label {
+    position: relative;
+}
+
+.option_group span::before,
+.option_group span::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.option_group span.radio:hover {
+    cursor: pointer;
+}
+
+.option_group span.radio::before {
+    left: -52px;
+    width: 45px;
+    height: 25px;
+    background-color: var(--bg-dark-primary);
+    border-radius: 25px;
+}
+
+.option_group span.radio::after {
+    left: -49px;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: var(--bg-orange-primary);
+    transition: .25s;
+}
+
+input:checked+label span.radio::after {
+    left: -27px;
+    background-color: var(--bg-sky-tertiary);
+}
