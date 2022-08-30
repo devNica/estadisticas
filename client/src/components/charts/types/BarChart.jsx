@@ -33,7 +33,8 @@ const BarChart = ({ data, labels, backgroundColor, ratio, title }) => {
                     }}
 
                     options={{
-                        maintainAspectRatio: ratio
+                        maintainAspectRatio: false,
+                        aspectRatio: 1
                     }}
                 /> : null
             }

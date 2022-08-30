@@ -1,11 +1,18 @@
-.zones_pages{
-    background-color: var(--bg-white-tertiary);
+.zones_page{
+    display: grid;
+    margin-top: 1rem;
+    grid-template-columns: 1fr;
+    background: var(--bg-white-primary);
+    padding: var(--card-padding);
+    border-radius: var(--border-radius-1);
+    font-family: 'Oswald', sans-serif;
+    box-shadow: var(--box-shadow);    
 }
 
-.zones_pages_title{
-    font-family: 'Bebas Neue', cursive;
-    color: var(--bg-dark-primary);
-    font-weight: 300;
+.zones_page_title h2{
+    font-size: 1.7rem;
+    color: var(--bg-gray-tertiary);
+    font-weight: 500;
 }
 
 .zones_pages_subtitle {
@@ -18,4 +25,19 @@
     font-family: 'Rubik', sans-serif;
     font-style: italic;
     font-size: 0.85rem;
+}
+
+.page_container{
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.page_container .bottom{
+    width: 84vw;
+    padding-top: 2rem;
+    border: 2px dashed var(--bg-gray-tertiary);
 }

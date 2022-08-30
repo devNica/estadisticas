@@ -22,16 +22,16 @@ const ZonesPage = ({ fetchZones }) => {
     }, [fetchZonesFromRedux])
 
     return (
-        <div className='zones_pages'>
-            <div className="">
-                <h2 className='zones_pages_title'>Seccion de Informacion de Zonas Geograficas</h2>
+        <div className='zones_page'>
+            <div className="zones_page_title">
+                <h2>Seccion de Informacion de Zonas Geograficas</h2>
             </div>
 
             <div className="page_container">
-                <div className="left_container">
+                <div className="top">
                     <CustomDataTable strategy={'ZONES'} />
                 </div>
-                <div className="rigth_container">
+                <div className="bottom">
                     <ZonasChart />
                 </div>
             </div>

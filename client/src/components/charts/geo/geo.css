@@ -1,8 +1,15 @@
 .charts {
     display: flex;
     flex-direction: column;
-    align-items: center;
     font-family: 'Fjalla One', sans-serif;
+}
+
+.charts .selected-chart{
+    height: 400px;
+}
+
+.charts .selected-chart canvas{
+    height: 300px;
 }
 
 .options_container {
@@ -54,4 +61,71 @@
 input:checked+label span.radio::after {
     left: -27px;
     background-color: var(--bg-sky-tertiary);
+}
+
+
+.btn-graph{
+    padding: 0.6em 2em;
+    border: none;
+    outline: none;
+    color: var(--bg-white-main);
+    background-color: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    user-select: none;
+    touch-action: manipulation;
+}
+
+.btn-graph::before{
+    content: "";
+    background: linear-gradient(
+        45deg,
+        var(--bg-red-primary),
+        var(--bg-orange-primary),
+        var(--bg-yellow-primary),
+        var(--bg-green-primary),
+        var(--bg-turquoise-primary),
+        var(--bg-blue-primary),
+        var(--bg-violet-primary),
+        var(--bg-pink-primary),
+        var(--bg-red-primary)
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-btn-graph 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+
+@keyframes glowing-btn-graph {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.btn-graph::after{
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
 }

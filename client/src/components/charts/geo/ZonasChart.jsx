@@ -4,6 +4,7 @@ import { getChartData, resetChartData } from '../../../redux/actions/charts'
 import Bar from '../types/BarChart'
 import Pie from '../types/PieChart'
 import Doughnut from '../types/DoughnutChart'
+import './geo.css'
 
 const mapStateToProps = state => ({
     zonas: state.geo.zones,
@@ -16,13 +17,12 @@ const ZonasChart = ({ getChartData, resetChartData, zonas }) => {
 
     const [selectedOption, setSelectedOption] = useState('P')
 
-    const handleOnSubmit = e => {
-        e.preventDefault()
+    const handleOnClick = e => {
         getChartData('zonas')
     }
 
     useEffect(() => {
-        return(()=>{
+        return (() => {
             resetChartData()
         })
     }, [resetChartData])
@@ -30,61 +30,42 @@ const ZonasChart = ({ getChartData, resetChartData, zonas }) => {
 
     return (
         <div>
-            { zonas !== undefined ?
-            
-            <div className="dsdjsk">
-                {
-                    selectedOption === 'P' ? <Pie ratio={false} /> :
-                        selectedOption === 'B' ? <Bar ratio={false} /> :
-                            selectedOption === 'D' ? <Doughnut ratio={false} /> : null }
+            {zonas !== undefined ?
 
+                <div className="charts">
+                    <div className='selected-chart'>
+                        {
+                            selectedOption === 'P' ? <Pie ratio={false} /> :
+                                selectedOption === 'B' ? <Bar ratio={false} /> :
+                                    selectedOption === 'D' ? <Doughnut ratio={false} /> : null}
+                    </div>
 
-                <div className="">
-                    <form className='form-inline' onSubmit={handleOnSubmit}>
-                        <div className="form-group mr-3">
-                            <label htmlFor="id_pie">
-                                <input
-                                    type="radio"
-                                    value='P'
-                                    className='form-control'
-                                    id='id_pie'
-                                    checked={selectedOption === 'P'}
-                                    onChange={(e) => setSelectedOption(e.target.value)} />
-                                Pie Chart</label>
+                    <section className='options_container'>
+                        <div className="option_group">
+                            <input type="radio" name='pie' value='P' id='pie' checked={selectedOption === 'P'} onChange={(e) => setSelectedOption(e.target.value)} />
+                            <label className='radio' htmlFor='pie'>
+                                <span className='radio'>Pie Chart</span>
+                            </label>
                         </div>
-                        <div className="form-group mr-3">
-                            <label htmlFor="id_doughnut">
-                                <input
-                                    type="radio"
-                                    value='D'
-                                    className='form-control'
-                                    id='id_doughnut'
-                                    checked={selectedOption === 'D'}
-                                    onChange={(e) => setSelectedOption(e.target.value)} />
-                                Doughnut Chart</label>
+                        <div className="option_group">
+                            <input type="radio" value='D' id='doughnut' checked={selectedOption === 'D'} onChange={(e) => setSelectedOption(e.target.value)} />
+                            <label className='radio' htmlFor='doughnut'>
+                                <span className='radio'>Doughnut Chart</span>
+                            </label>
                         </div>
-                        <div className="form-group mr-3">
-                            <label htmlFor="id_bar">
-                                <input
-                                    type="radio"
-                                    value='B'
-                                    className='form-control'
-                                    id='id_bar'
-                                    checked={selectedOption === 'B'}
-                                    onChange={(e) => setSelectedOption(e.target.value)} />
-                                Bar Chart</label>
+                        <div className="option_group">
+                            <input type="radio" value='B' id='bar' checked={selectedOption === 'B'} onChange={(e) => setSelectedOption(e.target.value)} />
+                            <label className="radio" htmlFor='bar'>
+                                <span className='radio'>Bar Chart</span>
+                            </label>
                         </div>
-                        <div className="form-group">
-                            <input type="submit"
-                                value='Graficar'
-                                className='btn btn-primary text-white'
-                            />
+                        <div className="option_submit">
+                            <button type='button' onClick={handleOnClick} className="btn-graph">
+                                Graficar
+                            </button>
                         </div>
-                    </form>
-                </div>
-
-                
-            </div> : null }
+                    </section>
+                </div> : null}
 
         </div >
     );

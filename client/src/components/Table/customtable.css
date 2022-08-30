@@ -1,49 +1,46 @@
 table.customTable {
-    border: 8px solid var(--bg-white-tertiary);
-    background-color: var(--bg-white-tertiary);
+    border: 8px solid var(--bg-gray-primary);
+    background-color: var(--bg-white-primary);
     width: 800px;
     text-align: center;
     border-collapse: collapse;
-    margin: 2rem;
   }
   table.customTable td, table.customTable th {
-    border: 5px solid var(--bg-white-tertiary);
+    border: 5px solid var(--bg-white-primary);
     padding: 2px 4px;
   }
   table.customTable tbody td {
-    font-size: 0.85rem;
-    font-family: 'Saira', sans-serif;
+    font-size: 0.99rem;
+    font-family: 'IBM Plex Mono', monospace;
     color: var(--bg-dark-tertiary);
   }
   table.customTable tr:nth-child(even) {
     background: var(--bg-gray-secondary);
   }
   table.customTable thead {
-    background: var(--bg-blue-secondary);
-    border-bottom: 0px solid var(--bg-blue-secondary);
+    background: var(--bg-sky-quaternary);
   }
   table.customTable thead th {
-    font-size: 0.85rem;
-    font-family: 'Saira', sans-serif;
+    font-size: 1.1rem;
+    font-family: 'IBM Plex Mono', monospace;
     color: var(--bg-white-main);
     text-align: center;
-    border-left: 1px solid var(--bg-white-tertiary);
-    font-style: italic;
-    font-weight: 400;
-    height: 40px;
+    border-left: 1px solid var(--bg-white-primary);
+    font-weight: 500;
+    height: 32px;
   }
   table.customTable thead th:first-child {
     border-left: none;
-    height: 30px !important;
+    height: 32px !important;
   }
 
   .sort{
       margin-left: 0.6rem;
       vertical-align: middle;
-      color:  var(--bg-gray-tertiary);
+      color:  var(--bg-white-tertiary);
   }
 
   .sort :hover{
       cursor: pointer;
-      color: var(--bg-yellow-secondary);
+      color: var(--bg-dark-secondary);
   }

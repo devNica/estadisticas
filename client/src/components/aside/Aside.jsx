@@ -9,7 +9,7 @@ const Aside = () => {
             <div className="top">
                 <div className="logo">
                     <img src={logo} alt="" />
-                    <h2 className='text-muted'>Lux&Dev</h2>
+                    <h2 className='brand'>Lux&Dev</h2>
                 </div>
             </div>
             <Sidebar />

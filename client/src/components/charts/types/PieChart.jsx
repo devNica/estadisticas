@@ -3,6 +3,7 @@ import { Pie as Grafico } from 'react-chartjs-2'
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js'
 import { connect } from 'react-redux'
 
+
 ChartJS.register(ArcElement, Tooltip, Legend)
 
 const Piechart = ({ labels, data, backgroundColor, ratio }) => {
@@ -24,7 +25,7 @@ const Piechart = ({ labels, data, backgroundColor, ratio }) => {
                     }}
 
                     options={{
-                        maintainAspectRatio: ratio
+                        maintainAspectRatio: false,
                     }}
                 /> : null
 

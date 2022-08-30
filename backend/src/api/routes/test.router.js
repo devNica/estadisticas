@@ -13,7 +13,7 @@ testRouter.get('/', (_req, res)=>{
         author: app.get('pkg').author
     }
 
-    res.json(info)
+    res.status(200).json({ meta: info, msg: 'success'})
 })
 
 testRouter.get('/run-migration', async(req, res)=>{

@@ -1,0 +1,14 @@
+### migrar datos
+GET http://localhost:6700/anuario/v1/test/run-migration HTTP/1.1
+
+### fetch all zones
+GET http://localhost:6700/anuario/v1/geo/zones HTTP/1.1
+
+### fetch zone by id
+GET http://localhost:6700/anuario/v1/geo/zones/0 HTTP/1.1
+
+### fetch all departaments by zone
+GET http://localhost:6700/anuario/v1/geo/zones/2/departaments HTTP/1.1
+
+### fetch all municipalities by zone
+GET http://localhost:6700/anuario/v1/geo/zones/3/municipalities HTTP/1.1

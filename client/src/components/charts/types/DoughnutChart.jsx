@@ -23,9 +23,10 @@ const DoughnutChart = ({ labels, data, backgroundColor, ratio }) => {
                         ]
 
                     }}
+                
 
                     options={{
-                        maintainAspectRatio: ratio
+                        maintainAspectRatio: false,
                     }}
                 /> : null
 

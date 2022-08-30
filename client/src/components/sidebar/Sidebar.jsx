@@ -6,21 +6,21 @@ const Sidebar = () => {
 
     return (
         <div className="sidebar">
-            <Link to="/dashboard" className='sidebar_nav_link'>
+            <Link to="/" className='sidebar_nav_link'>
                 <span>
-                    <i class="bi bi-grid"></i>
+                    <i className="bi bi-grid"></i>
                 </span>
-                <h3 className='sidebar_nav_title'>Dashboard</h3>
+                <h3 className='sidebar_nav_title'>DASHBOARD</h3>
             </Link>
-            <Link to="/dashboard" className='sidebar_nav_link active'>
+            <Link to="/zones" className='sidebar_nav_link active'>
                 <span>
-                    <i class="bi bi-columns"></i>
+                    <i className="bi bi-columns"></i>
                 </span>
-                <h3 className='sidebar_nav_title'>Zonas</h3>
+                <h3 className='sidebar_nav_title'>GEO ZONAS</h3>
             </Link>
-            <Link to="/dashboard" className='sidebar_nav_link'>
+            <Link to="/signup" className='sidebar_nav_link'>
                 <span>
-                    <i class="bi bi-box-arrow-right"></i>
+                    <i className="bi bi-box-arrow-right"></i>
                 </span>
                 <h3 className='sidebar_nav_title'>Logout</h3>
             </Link>

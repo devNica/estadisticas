@@ -4,6 +4,7 @@ main {
 
 main .dashboard_title{
     font-family: 'Oswald', sans-serif;
-    color: var(--bg-blue-primary);
+    color: var(--bg-orange-primary);
+    font-size: 2rem;
 }
 
