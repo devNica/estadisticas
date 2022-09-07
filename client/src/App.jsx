@@ -4,7 +4,7 @@ import MainLayout from './Layouts/MainLayout';
 import ZonesPage from './pages/zones/ZonesPage'
 import WelcomePage from './pages/welcome/WelcomePage';
 import { Provider } from 'react-redux'
-import store from './redux/store';
+import {store} from './redux/store';
 import './app.css'
 
 function App() {

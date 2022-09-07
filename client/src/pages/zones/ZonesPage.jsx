@@ -1,25 +1,29 @@
 import React from 'react'
-import CustomDataTable from '../../components/DataTable/CustomDataTable'
-import { connect } from 'react-redux'
-import { fetchZones } from '../../redux/actions/geographic'
 import { useCallback, useEffect } from 'react'
+import CustomDataTable from '../../components/DataTable/CustomDataTable'
+import { geoRouter } from '../../services/api/api.service'
+import { useDispatch } from 'react-redux'
+import { setZones } from '../../redux/features/geographic/geoSlice'
 import ZonasChart from '../../components/charts/geo/ZonasChart'
+import { serializeToDataModel } from '../../helpers/serializerData'
+import { ZoneModel } from '../../models'
 import './zones.css'
 
-const actionRedux = {
-    fetchZones
-}
 
-const ZonesPage = ({ fetchZones }) => {
+const ZonesPage = () => {
 
-    const fetchZonesFromRedux = useCallback(async () => {
-        await fetchZones()
-    }, [fetchZones])
+    const dispatch = useDispatch()
+
+    const fetchZonesFromAPI = useCallback(async () => {
+        const response = await geoRouter.fetchZones()
+        const zonas = serializeToDataModel(ZoneModel, response.meta.zonas)
+        dispatch(setZones(zonas))
+    }, [dispatch])
 
 
     useEffect(() => {
-        fetchZonesFromRedux()
-    }, [fetchZonesFromRedux])
+        fetchZonesFromAPI()
+    }, [fetchZonesFromAPI])
 
     return (
         <div className='zones_page'>
@@ -40,4 +44,4 @@ const ZonesPage = ({ fetchZones }) => {
     )
 }
 
-export default connect(null, actionRedux)(ZonesPage)
+export default ZonesPage

@@ -63,11 +63,11 @@ export const getChartData = (origen, aux = 'ext') => (dispatch, getState) => {
     // de la altura promedio de cada cabecera municipal
     if (aux === 'alt') {
 
-        for (var i = 0; i < arreglo.length; ++i) {
-            label[i] = arreglo[i].nombre;
-            alt[i] = parseFloat(arreglo[i].msm);
+        for (var v = 0; v < arreglo.length; ++v) {
+            label[v] = arreglo[v].nombre;
+            alt[v] = parseFloat(arreglo[v].msm);
 
-            for (var k = 0; k < 6; k++) {
+            for (var w = 0; w < 6; w++) {
                 colorHex += letters[Math.floor(Math.random() * 16)];
 
             }
